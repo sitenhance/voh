@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+/* Account Sign In Shopping Component Styles */
+.account-section {
+    margin-top: 1em;
+}
+
+/* Button Component Styles */
+.action-btn {
+    background-color: #d51546;
+    color: #fff;
+}
