@@ -19,6 +19,14 @@ body {
     color: #fff;
 }
 
+/* Social Icon Styles */
+.social-icon {
+    margin-right: 1.5em;
+}
+.social-icon:last-child {
+    margin: 0;
+}
+
 /* Account Sign In Shopping Component Styles */
 .account-section {
     margin-top: 1em;
@@ -40,4 +48,60 @@ a.nav-item {
 }
 a.nav-item:hover {
     color: #fff;
+}
+
+/* Footer Component Styles */
+footer.footer {
+    background: #321e13;
+    color: #fff;
+    padding-bottom: 40px;
+}
+div#left-footer-section, div#right-footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+div#footer-logo {
+    margin-right: 1.5em;
+}
+div#footer-logo > a {
+    border: 0;
+}
+#footer-slogan > p{
+    font-size: 1.5em
+}
+#footer-join-slogan {
+    margin-right: 1.5em;
+}
+#footer-join-slogan > p {
+    font-size: 1.5em;
+}
+#footer-join-btn > a, #footer-join-btn > a:hover {
+    color: #fff;
+    border: 0;
+}
+div#footer-social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div#footer-social-icons > a {
+    border: 0;
+}
+div#bottom-footer {
+    padding: 2em;
+    color:#828c8e;
+    font-size: 0.813em;
+}
+div#bottom-footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#bottom-footer-links > a {
+    color: #828c8e;
+}
+div#bottom-footer-links > a:hover {
+    color: #57c6cd;
 }
