@@ -6,11 +6,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Account Sign In Shopping Component Styles */
-.account-section {
-    margin-top: 1em;
-}
-
 /* Button Component Styles */
 .action-btn {
     background-color: #d51546;
@@ -20,4 +15,17 @@ body {
 .action-btn:hover {
     background-color: #a61136;
     color: #fff;
+}
+
+/* Account Sign In Shopping Component Styles */
+.account-section {
+    margin-top: 1em;
+}
+
+/* Navigation Component Styles */
+.nav {
+    background-color: #57c6cd;
+}
+img.logo-img {
+    max-height: 64px;
 }
