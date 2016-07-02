@@ -4,6 +4,8 @@ html {
 body {
     height: 100%;
     font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 /* Button Component Styles */
@@ -28,4 +30,14 @@ body {
 }
 img.logo-img {
     max-height: 64px;
+}
+a.nav-item:first-child {
+    margin-right: 1.5em;
+}
+a.nav-item {
+    font-size: 1.250em;
+    color: #321e13;
+}
+a.nav-item:hover {
+    color: #fff;
 }
