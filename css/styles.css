@@ -143,3 +143,50 @@ div#bottom-footer-links > a {
 div#bottom-footer-links > a:hover {
     color: #57c6cd;
 }
+
+/* About Page */
+div.about-title > h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+    color:#828c8e;
+}
+div.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.about-media {
+    text-align: center;
+}
+div#about-social-icons {
+    margin: 1em;
+}
+div.about-content > h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 35px;
+    color: #321e13;
+}
+div.about-content > h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    color: #57c6cd;
+    margin-bottom: 0.75em;
+}
+div.about-content > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #828c8e;
+    margin: 0.5em;
+}
+div.about-video {
+    text-align: center;
+}
+/* End of About Page */
