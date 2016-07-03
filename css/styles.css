@@ -49,7 +49,45 @@ a.nav-item {
 a.nav-item:hover {
     color: #fff;
 }
+div#nav-columns {
+    margin-bottom: 0;
+}
+div#nav-columns > div.column {
+    padding-bottom: 0;
+}
 
+/* Hero Component Styles */
+section#home-hero {
+    background-image: url('../images/home-hero-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #fff;
+}
+h1#home-hero-title {
+    font-size: 5.000em;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+h2#home-hero-subtitle {
+    font-size: 2.000em;
+}
+div#home-hairstyle-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span.select {
+    margin-top: 2em;
+}
+select#home-find-hairstyle {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+}
+div#home-hairstyle-dropdown > a {
+    margin-top: 2em;
+}
 /* Footer Component Styles */
 footer.footer {
     background: #321e13;
