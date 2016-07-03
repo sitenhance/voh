@@ -8,6 +8,8 @@ body {
     font-weight: 400;
 }
 
+
+
 /* Button Component Styles */
 .action-btn {
     background-color: #d51546;
@@ -18,6 +20,9 @@ body {
     background-color: #a61136;
     color: #fff;
 }
+/* End of Button */
+
+
 
 /* Social Icon Styles */
 .social-icon {
@@ -31,6 +36,9 @@ body {
 .account-section {
     margin-top: 1em;
 }
+/* End of Account/Sign In/Shopping */
+
+
 
 /* Navigation Component Styles */
 .nav {
@@ -55,6 +63,9 @@ div#nav-columns {
 div#nav-columns > div.column {
     padding-bottom: 0;
 }
+/* End of Navigation */
+
+
 
 /* Hero Component Styles */
 section#home-hero {
@@ -88,6 +99,10 @@ select#home-find-hairstyle {
 div#home-hairstyle-dropdown > a {
     margin-top: 2em;
 }
+/* End of Hero Component */
+
+
+
 /* Footer Component Styles */
 footer.footer {
     background: #321e13;
@@ -143,6 +158,9 @@ div#bottom-footer-links > a {
 div#bottom-footer-links > a:hover {
     color: #57c6cd;
 }
+/* End of Footer */
+
+
 
 /* About Page */
 div.about-title > h1 {
@@ -190,3 +208,35 @@ div.about-video {
     text-align: center;
 }
 /* End of About Page */
+
+
+/* How It Works Components */
+div#home-hiw {
+    border-bottom: #828c8e solid 2px;
+    padding-bottom: 2em;
+}
+div#hiw-header {
+    margin-bottom: 1em;
+}
+div#hiw-header {
+    font-size: 2.500em;
+}
+div#hiw-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#hiw-links > a {
+    color: #321e13;
+}
+div#hiw-links > a:hover {
+    color: #d51546;
+}
+div.hiw-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.hiw-image {
+    margin-bottom: 1em;
+}
