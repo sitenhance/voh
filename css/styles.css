@@ -152,6 +152,10 @@ img.input-scl-icon {
 }
 
 /* For Stylists */
+div.fr-stylists-frm > label, div.fr-stylists-frm > p.control > label {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
 div.fr-stylists-form-container {
     display: flex;
     flex-direction: column;
@@ -167,7 +171,7 @@ div.fr-stylists-frm-intro h2 {
     color: #414e61;
     font-size: 1.5em;
 }
-label.fr-stylist-check-radio > input:not(:first-child) {
+label.fr-stylist-check-radio > input {
     margin-left: 1em;
 }
 label.fr-stylist-check-radio > input {
