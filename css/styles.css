@@ -95,6 +95,9 @@ div.voh-card-3 {
     width: 31.33%;
     margin-bottom: 1.5em;
 }
+figure.voh-video > video {
+    width: 100%;
+}
 
 /* Top Header Component */
 div#top-header > h1 {
