@@ -323,3 +323,42 @@ div.fs-info > a:hover {
 div#fs-read-more > a, div#fs-read-more > a:hover {
     color: #fff;
 }
+/* End of Featured Stylist */
+
+
+/* Social Sidebar Component Styles */
+div#social-sidebar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #321e13;
+    padding: 2.5em;
+}
+div.scl-sb-header {
+    border-bottom: 1px solid #3d4d65;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+}
+div.scl-sb-header > h2 {
+    font-size: 1.5em;
+}
+div.scl-sb-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+span.scl-sb-icon {
+    margin-right: 1em;
+}
+span.scl-sb-icon:last-child {
+    margin-right: 0;
+}
+span.scl-sb-icon > a {
+    color: #3d4d65;
+}
+span.scl-sb-icon > a:hover {
+    color: #414e61;
+}
+span.scl-sb-icon > a > i.fa {
+    font-size: 32px;
+}
+/* End Of Social Sidebar Component */
