@@ -8,8 +8,6 @@ body {
     font-weight: 400;
 }
 
-
-
 /* Button Component Styles */
 .action-btn {
     background-color: #d51546;
@@ -98,6 +96,43 @@ div.voh-card-3 {
 figure.voh-video > video {
     width: 100%;
 }
+
+/* Quote Card Component */
+div.quote-card {
+    background-color: #321e13;
+    color: #fff;
+}
+div.quote-card-3 {
+    width: 31.33%;
+}
+header.card-header {
+    border-bottom: 1px solid #fff;
+}
+header.card-header > p {
+    color: #fff;
+}
+div.quote-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.quote-card-content > i, div.quote-card-content > p {
+    margin-bottom: 1em;
+}
+div.quote-card-content > p {
+    font-size: 1.25em;
+}
+div.quote-card-content > p.quote-author {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin-top: 1.25em;
+    margin-bottom: .25em;
+}
+p.quote-author-title {
+    font-size: .75em;
+    font-weight: 300;
+}
+
 
 /* Top Header Component */
 div#top-header > h1 {
@@ -260,6 +295,46 @@ div#bottom-footer-links > a:hover {
 }
 /* End of Footer */
 
+/* Main Video Component */
+div.main-video > figure.video-fig > video {
+    width: 100%;
+}
+div.main-video-description {
+    margin-bottom: 4em;
+}
+div.main-video-description h1 {
+    color: #57c6cd;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+div.main-video-description p {
+    font-size: 1.5em;
+    color: #3d4d65;
+}
+
+/* Courses Styles */
+section#courses-top-video {
+    padding-top: 0;
+}
+div#courses-main-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.voh-book-description {
+    font-size: 1.5em;
+    color: #414e61
+}
+div.enroll-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.enroll-cta h1 {
+    font-size: 2em;
+    color: #57c6cd;
+    margin-bottom: 1em;
+}
 
 
 /* About Page */
