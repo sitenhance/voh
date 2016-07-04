@@ -140,8 +140,42 @@ div#home-hairstyle-dropdown > a {
 }
 /* End of Hero Component */
 
+/* Social Input Component */
+div.social-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+img.input-scl-icon {
+    margin-right: 1em;
+}
 
-
+/* For Stylists */
+div.fr-stylists-form-container {
+    display: flex;
+    flex-direction: column;
+}
+div.fr-stylists-frm-intro {
+    margin-bottom: 2em;
+}
+div.fr-stylists-frm-intro h1 {
+    color: #57c6cd;
+    font-size: 2em;
+}
+div.fr-stylists-frm-intro h2 {
+    color: #414e61;
+    font-size: 1.5em;
+}
+label.fr-stylist-check-radio > input:not(:first-child) {
+    margin-left: 1em;
+}
+label.fr-stylist-check-radio > input {
+    margin-right: .5em;
+}
+div.fr-stylists-form-container > div#load-more-container {
+    align-self: center;
+}
 
 /* Find Stylist Hero Component */
 section#find-stylists-hero {
@@ -151,6 +185,17 @@ section#find-stylists-hero {
     min-height: 500px;
     color: #fff;
     margin-bottom: 2em;
+}
+
+/* For Stylists Hero Component */
+section#for-stylists-hero {
+    background-image: url('../images/for-stylists-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #fff;
+    margin-bottom: 2em;
+    background-size: cover;
 }
 
 /* Footer Component Styles */
