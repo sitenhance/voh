@@ -299,13 +299,6 @@ div#fs-container {
     flex-direction: column;
     align-items: center;
 }
-div#fs-header {
-    margin-bottom: 2.75em;
-}
-div#fs-header > h1 {
-    color: #321e13;
-    font-size: 2.500em;
-}
 /* End of Featured Stylist */
 
 
@@ -355,10 +348,6 @@ div#hm-scl-header > h1 {
 }
 
 /* Find Stylist Hero Search */
-div#fnd-styl-header > h1 {
-    font-size: 2.500em;
-    color: #321e13;
-}
 div#fnd-styl-hero-body {
     display: flex;
     flex-direction: row;
