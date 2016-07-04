@@ -85,7 +85,7 @@ div#nav-columns > div.column {
 
 
 
-/* Hero Component Styles */
+/* Home Hero Component Styles */
 section#home-hero {
     background-image: url('../images/home-hero-img.jpg');
     background-position: center;
@@ -121,11 +121,23 @@ div#home-hairstyle-dropdown > a {
 
 
 
+
+/* Find Stylist Hero Component */
+section#find-stylists-hero {
+    background-image: url('../images/find-stylist-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
 /* Footer Component Styles */
 footer.footer {
     background: #321e13;
     color: #fff;
     padding-bottom: 40px;
+    margin-top: 2em;
 }
 div#left-footer-section, div#right-footer-section {
     display: flex;
@@ -363,8 +375,39 @@ span.scl-sb-icon > a > i.fa {
 }
 /* End Of Social Sidebar Component */
 
+
+
 /* Home Instagram Social Plugin Component */
 div#hm-scl-header > h1 {
     font-size: 2.5em;
     color: #321e13;
+}
+
+/* Find Stylist Hero Search */
+div#fnd-styl-header > h1 {
+    font-size: 2.500em;
+    color: #321e13;
+}
+div#fnd-styl-hero-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div#fnd-stl-search {
+    padding: 1.5em;
+    background: #828c8e;
+}
+div#fnd-stl-search-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div#fnd-stl-search-input-container > p.control {
+    margin: 0;
+}
+div#fnd-stl-search-input-container > p > span.select {
+    margin: 0;
+    margin-right: 1em;
 }
