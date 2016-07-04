@@ -20,6 +20,24 @@ body {
     background-color: #a61136;
     color: #fff;
 }
+.read-more-btn {
+    background-color: #57c6cd;
+    color: #fff;
+    border: 0;
+}
+.read-more-btn:hover {
+    background-color: #48a4ab;
+    color: #fff;
+}
+.load-btn {
+    background-color: #cc9880;
+    color: #fff;
+    border: 0;
+}
+.load-btn:hover {
+    background-color: #a17865;
+    color: #fff;
+}
 /* End of Button */
 
 
@@ -217,8 +235,6 @@ div#home-hiw {
 }
 div#hiw-header {
     margin-bottom: 1em;
-}
-div#hiw-header {
     font-size: 2.500em;
 }
 div#hiw-links {
@@ -239,4 +255,71 @@ div.hiw-card {
 }
 div.hiw-image {
     margin-bottom: 1em;
+}
+/* End Of How It Works */
+
+
+
+/* Featured Stylist Component Styles */
+section#featured-stylists {
+    padding-top: 1.250em;
+}
+div#fs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#fs-header {
+    margin-bottom: 2.75em;
+}
+div#fs-header > h1 {
+    color: #321e13;
+    font-size: 2.500em;
+}
+div#fs-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+div.fs-card {
+    width: 31.33%;
+    margin-bottom: 2.5em;
+    border: 1px #57c6cd solid;
+}
+div.fs-image {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    border-bottom: 1px #57c6cd solid;
+}
+div.fs-image > img {
+    width: 100%;
+}
+div.fs-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #3d4d65;
+    padding: 0 1.250em 1.250em;
+}
+div.fs-info-header {
+    margin-bottom: 1.5em;
+}
+div.fs-info-header > h3 {
+    font-size: 2.000em;
+}
+p.fs-info-address, p.fs-info-number {
+    font-size: 1.313em;
+    margin-bottom: .5em;
+}
+div.fs-info > a {
+    margin-top: 1em;
+}
+div.fs-info > a:hover {
+    color: #fff;
+}
+div#fs-read-more > a, div#fs-read-more > a:hover {
+    color: #fff;
 }
