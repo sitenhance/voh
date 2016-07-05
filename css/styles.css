@@ -230,6 +230,150 @@ div.fr-stylists-form-container > div#load-more-container {
     align-self: center;
 }
 
+/* Stylist Styles */
+div.stylists-top-box {
+    display: flex;
+}
+section#stylist-gallery-section {
+    padding-top: 0;
+}
+div.stylist-request-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+div.social-salon-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.stylist-social-icons {
+    margin-bottom: 2em;
+}
+div.stylist-salon-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.salon-name > p {
+    font-size: 2em;
+    color: #414e61;
+}
+div.salon-address > p {
+    font-size: 1.5em;
+    color: #414e61;
+}
+
+/* Additional Stylists Component */
+div.additional-stylist-header {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #828c8e;
+    margin-bottom: 2em;
+}
+div.additional-stylist-header > h1 {
+    font-size: 2em;
+}
+div.additional-stylists-display {
+    margin-bottom: 2.5em;
+}
+div.additional-stylist-content > p {
+    font-size: 1.5em;
+}
+
+/* Stylist Contact Component */
+div.stylist-contact-box {
+    width: 100%;
+    background-color: #321e13;
+    color: #fff;
+    padding: 2em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div.stylist-contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.stylist-contact-icon > i {
+    font-size: 3.25em;
+}
+div.stylist-contact-title > h1 {
+    font-size: 2em;
+}
+div.stylist-email > p, div.stylist-phone > p, div.stylist-website > a {
+    font-size: 1.5em;
+}
+div.stylist-website > a:hover {
+    color: #d51546;
+}
+
+
+
+/* Specialty Box Component */
+div.specialty-box {
+    width: 100%;
+    background-color: #48a4ab;
+    padding: 2em;
+    border-radius: 25px;
+    color: #fff;
+}
+div.specialty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.specialty-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+div.specialty-icon i {
+    font-size: 3em;
+}
+div.specialty-title h1 {
+    font-size: 2em;
+}
+div.specialty-skills > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+div.specialty-skills > ul > li {
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+/* Stylist Bio Component */
+div.stylist-bio-box {
+    background-color: #321e13;
+    color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    padding: 2em;
+}
+div.stylist-bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.stylist-bio-header {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+} 
+div.stylist-bio-header h1 {
+    font-size: 2em;
+}
+
+
 /* Find Stylist Hero Component */
 section#find-stylists-hero {
     background-image: url('../images/find-stylist-hero.jpg');
