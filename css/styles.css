@@ -283,6 +283,35 @@ div.salon-address > p {
     color: #414e61;
 }
 
+/* Single Blog Post Styles */
+section#blog-post-section {
+    padding-top: 0;
+}
+section#addition-articles {
+    padding-bottom: 0;
+}
+div#single-post-comments {
+    border-top: 1px solid #321e13;
+    padding-top: 1em;
+}
+div.blog-post-hero {
+    margin-bottom: 1em;
+}
+div.blog-post-social {
+    margin-bottom: 2em;
+}
+div.blog-post-content > div > p {
+    font-size: 1.25em;
+    color: #414e61;
+}
+div.hero {
+    background-image: url('../images/blog-img-six-lg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #fff;
+}
+
 /* Additional Stylists Component */
 div.additional-stylist-header {
     padding-bottom: 1.5em;
@@ -297,6 +326,13 @@ div.additional-stylists-display {
 }
 div.additional-stylist-content > p {
     font-size: 1.5em;
+}
+article.add-article {
+    flex-direction: column;
+    align-items: center;
+}
+article.add-article > figure {
+    margin-bottom: 1.5em;
 }
 
 /* Stylist Contact Component */
