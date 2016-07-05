@@ -40,11 +40,20 @@ body {
     background-color: #d51546;
     color: #fff;
     border: 0;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 25px;;
 }
 .account-btn:hover {
     background-color: #a61136;
+    color: #fff;
+}
+.contact-btn {
+    background-color: #2976ec;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+}
+.contact-btn:hover {
+    background-color: #18417f;
     color: #fff;
 }
 /* End of Button */
@@ -439,6 +448,15 @@ section#find-stylists-hero {
 
 /* For Stylists Hero Component */
 section#for-stylists-hero {
+    background-image: url('../images/for-stylists-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    color: #fff;
+    margin-bottom: 2em;
+    background-size: cover;
+}
+section#contact-hero {
     background-image: url('../images/for-stylists-hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -859,3 +877,13 @@ label.signup-check-radio > input {
     margin-right: .5em;
 }
 /* End of SignUp Page
+
+/*Contact Page */
+div#contact-container {
+    margin-top: 1.5em;
+    text-align: right;
+}
+div.text-box1 {
+    margin-top: 1.5em;
+}
+/*End of Contact Page */
