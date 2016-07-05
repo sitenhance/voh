@@ -167,6 +167,19 @@ div.image-gallery {
     width: 24%;
 }
 
+/* Single Video Styles */
+section#video-top-video {
+    padding-top: 0;
+}
+section#video-content-section {
+    padding-top: 0;
+}
+div.video-post-social {
+    margin-bottom: 2em;
+}
+div.video-content {
+    font-size: 1.25em;
+}
 
 /* Top Header Component */
 div#top-header > h1 {
