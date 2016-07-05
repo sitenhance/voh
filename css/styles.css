@@ -242,10 +242,16 @@ div.fr-stylists-form-container > div#load-more-container {
 }
 
 /* Stylist Styles */
+section#stylist-section {
+    padding-top: 0;
+}
 div.stylists-top-box {
     display: flex;
 }
 section#stylist-gallery-section {
+    padding-top: 0;
+}
+section#stylist-contact-section {
     padding-top: 0;
 }
 div.stylist-request-info {
