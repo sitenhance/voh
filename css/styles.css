@@ -36,6 +36,17 @@ body {
     background-color: #a17865;
     color: #fff;
 }
+.account-btn {
+    background-color: #d51546;
+    color: #fff;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+}
+.account-btn:hover {
+    background-color: #a61136;
+    color: #fff;
+}
 /* End of Button */
 
 
@@ -753,3 +764,56 @@ div.sb-scl-icons {
 div.sb-scl-icons > a:not(:last-child) {
     margin-right: 1em;
 }
+
+/* Signup  */
+div.fr-stylists-frm > label, div.fr-stylists-frm > p.control > label {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+div.fr-stylists-form-container {
+    display: flex;
+    flex-direction: column;
+}
+div.fr-stylists-frm-intro {
+    margin-bottom: 2em;
+}
+div.fr-stylists-frm-intro h1 {
+    color: #57c6cd;
+    font-size: 2em;
+}
+div.fr-stylists-frm-intro h2 {
+    color: #414e61;
+    font-size: 1.5em;
+}
+label.fr-stylist-check-radio > input {
+    margin-left: 1em;
+}
+label.fr-stylist-check-radio > input {
+    margin-right: .5em;
+}
+div.fr-stylists-form-container > div#load-more-container {
+    align-self: center;
+}
+
+/* SignUp Page */
+div.signup-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.signup-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div#account-container {
+    text-align: center;
+}
+label.signup-check-radio > input {
+    margin-left: 1em;
+    text-align: center;
+}
+label.signup-check-radio > input {
+    margin-right: .5em;
+}
+/* End of SignUp Page
