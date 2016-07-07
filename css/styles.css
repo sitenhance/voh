@@ -396,7 +396,7 @@ div.stylist-website > a:hover {
     color: #d51546;
 }
 div.stylist-email > p.contact-box-title, div.stylist-phone > p.contact-box-title, div.stylist-website > p.contact-box-title a {
-    font-size: 1.5em;
+    font-size: 1.0em;
 
 
 /* Specialty Box Component */
