@@ -389,14 +389,14 @@ div.stylist-contact-icon > i {
 div.stylist-contact-title > h1 {
     font-size: 2em;
 }
-div.stylist-email > p, div.stylist-phone > p, div.stylist-website > p, a {
+div.stylist-email > p, div.stylist-phone > p, div.stylist-website > a {
     font-size: 1.5em;
 }
 div.stylist-website > a:hover {
     color: #d51546;
 }
-div.stylist-email > p.contact-box-title, div.stylist-phone > p.contact-box-title, div.stylist-website > p.contact-box-title a {
-    font-size: 1.0em;
+div.stylist-email > p.contact-box-title, div.stylist-phone > p.contact-box-title, div.stylist-website > p.contact-box-title {
+    font-size: 1.25em;
 
 
 /* Specialty Box Component */
