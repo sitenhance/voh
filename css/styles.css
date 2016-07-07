@@ -405,7 +405,8 @@ div.stylist-email > p, div.stylist-phone > p, div.stylist-website > a {
 div.stylist-website > a:hover {
     color: #d51546;
 }
-
+div.stylist-email > p.contact-box-title, div.stylist-phone > p.contact-box-title, div.stylist-website > p.contact-box-title {
+    font-size: 1.25em;
 
 
 /* Specialty Box Component */
@@ -549,9 +550,9 @@ div#footer-social-icons > a {
     border: 0;
 }
 div#bottom-footer {
-    padding: 2em;
+    padding: 1em;
     color:#828c8e;
-    font-size: 0.813em;
+    font-size: 1.0em;
 }
 div#bottom-footer-links {
     display: flex;
