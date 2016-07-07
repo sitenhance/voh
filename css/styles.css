@@ -9,6 +9,16 @@ body {
     background: #fff;
 }
 
+/*  Fotorama */
+.fotorama__caption__wrap {
+    padding: 1em;
+    background: #48a4ab;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
 /* Button Component Styles */
 .action-btn {
     background-color: #d51546;
