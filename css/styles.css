@@ -616,12 +616,13 @@ div.about-title > h1 {
     text-align: center;
     margin: 20px 0;
     font-size: 40px;
-    color:#ffffff;
+    color:#828c8e;
 }
 div.about-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #ffffff;
 }
 div.about-media {
     text-align: center;
@@ -650,9 +651,11 @@ div.about-content > p {
     font-size: 20px;
     color: #828c8e;
     margin: 0.5em;
+    background-color: #ffffff;
 }
 div.about-video {
     text-align: center;
+    background-color: #ffffff;
 }
 /* End of About Page */
 
