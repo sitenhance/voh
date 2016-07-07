@@ -395,6 +395,9 @@ div.stylist-email > p, div.stylist-phone > p, div.stylist-website > a {
 div.stylist-website > a:hover {
     color: #d51546;
 }
+p.contact-box-title {
+    font-size: 1.0em;
+}
 
 
 
