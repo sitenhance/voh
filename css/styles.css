@@ -617,6 +617,7 @@ div.about-title > h1 {
     margin: 20px 0;
     font-size: 40px;
     color:#828c8e;
+    background-color: #ffffff
 }
 div.about-section {
     display: flex;
@@ -626,9 +627,11 @@ div.about-section {
 }
 div.about-media {
     text-align: center;
+    background-color: #ffffff;
 }
 div#about-social-icons {
     margin: 1em;
+    background-color: #ffffff
 }
 div.about-content > h1 {
     font-family: 'Lato', sans-serif;
@@ -636,6 +639,7 @@ div.about-content > h1 {
     text-align: center;
     font-size: 35px;
     color: #321e13;
+    background-color: #ffffff
 }
 div.about-content > h2 {
     font-family: 'Lato', sans-serif;
@@ -644,6 +648,7 @@ div.about-content > h2 {
     font-size: 30px;
     color: #57c6cd;
     margin-bottom: 0.75em;
+    background-color: #ffffff
 }
 div.about-content > p {
     font-family: 'Lato', sans-serif;
