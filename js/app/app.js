@@ -1,0 +1,1 @@
+var vohApp = angular.module('vohApp', []);
