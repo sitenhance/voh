@@ -105,7 +105,7 @@
     </section>
 
     <!-- Featured Hair Stylist In Your Area -->
-    <section class="section" id="featured-stylists">
+    <section class="section" id="featured-stylists" ng-controller="stylistCtrl">
         <div class="container">
             <div class="columns">
                 <div class="column is-12" id="fs-container">
@@ -301,10 +301,14 @@
             </div>
         </div>
     </div>
-<script src="js/jquery-3.0.0.min.js"></script>
-<script src="js/stylist.js"></script>
+<script src="js/vendor/jquery-3.0.0.min.js"></script>
+<script src="js/vendor/angular.min.js"></script>
+<script src="js/vendor/lodash.min.js"></script>
+<script src="js/vendor/stylist.js"></script>
 
 <!--Angular Application-->
 <script src="js/app/app.js"></script>
+
+<script src="js/app/stylists/stylist.controller.js"></script>
 </body>
 </html>
