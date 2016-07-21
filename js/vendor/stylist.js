@@ -109,7 +109,7 @@ var stylists = [
         id: 3,
         name: 'Brittany Cash',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['braid', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -268,7 +268,7 @@ var stylists = [
         id: 6,
         name: 'Gina Bash',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['braid', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -480,7 +480,7 @@ var stylists = [
         id: 11,
         name: 'Melissa Bones',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['braid', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
