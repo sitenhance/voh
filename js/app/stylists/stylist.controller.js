@@ -8,15 +8,25 @@
         }
         
         //Find Stylists that do certain haircuts
-        function findSpecialties(hairstyles) {
+        function findSpecialties(pickedStyle) {
             var specialStylists = _.chain(stylists)
-                                    .filter(function(item) {
-                                        console.log(item);
-                                    })
-                                    .value();
+                .filter(function (item) {
+
+                    var singleStylist = _.chain(item.specialty).filter(function (hairstyle) {
+                        if (hairstyle === pickedStyle) {
+                            return true;
+                        } else { return false; }
+                    }).value();
+
+                    if (singleStylist.length !== 0) {
+                        return item;
+                    }
+
+                })
+                .value();
         }
 
-        findSpecialties('bobcut');
+        findSpecialties('bobcuts');
 
     }]);
 }());
