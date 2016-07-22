@@ -1,14 +1,16 @@
-(function(){
-    vohApp.controller('stylistCtrl', ['$scope', function($scope) {
+(function () {
+    vohApp.controller('stylistCtrl', ['$scope', function ($scope) {
 
         //Find Stylists That Are Featured
         function findFeaturedStylists() {
-            var featuredStylists = _.filter(stylists, { 'featured': true });
+            var featuredStylists = _.filter(stylists, {
+                'featured': true
+            });
             return featuredStylists;
         }
 
         $scope.stylists = findFeaturedStylists();
-        
+
         //Find Stylists that do certain haircuts
         function findSpecialties(pickedStyle) {
             var specialStylists = _.chain(stylists)
@@ -17,7 +19,9 @@
                     var singleStylist = _.chain(item.specialty).filter(function (hairstyle) {
                         if (hairstyle === pickedStyle) {
                             return true;
-                        } else { return false; }
+                        } else {
+                            return false;
+                        }
                     }).value();
 
                     if (singleStylist.length !== 0) {
@@ -32,20 +36,38 @@
 
         findSpecialties('bobcuts');
 
+        $scope.data = {
+            hairstyle: null,
+            location: null
+        }
+
+        function searchForStylists(location, hairstyle) {
+            var locationArray = location.split(', ');
+            locationArray[1]);
+        if (hairstyle === null) {
+            var stylistsInLocation = findLocation(locationArray[0],locationArray[1]);
+            $scope.stylists = stylistsInLocation;
+        } else if (location === null) {
+            var stylistsSpecialty = findSpecialties(hairstyle);
+            $scope.stylists = stylistsSpecialty;
+        } else {
+            
+        }
+
         //Find stylists by city and state
         var location = 'Houston, TX';
         var locationArray = location.split(', ');
 
         function findLocation(city, state) {
             var stylistsInLocation = _.chain(stylists)
-            .filter(function(item) {
-                if(item.city === city) {
-                    if(item.state === state) {
-                        return item;
+                .filter(function (item) {
+                    if (item.city === city) {
+                        if (item.state === state) {
+                            return item;
+                        }
                     }
-                }
-            })
-            .value();
+                })
+                .value();
             return stylistsInLocation;
         }
         findLocation(locationArray[0], locationArray[1]);
@@ -53,13 +75,13 @@
         //Move featured stylists to the top
         function featuredFirst(pikachu) {
             var stylistsArray = [];
-            var formattedStylists = _.chain(pikachu).filter(function(item) {
-                if(item.featured === true) {
+            var formattedStylists = _.chain(pikachu).filter(function (item) {
+                if (item.featured === true) {
                     return stylistsArray.push(item);
                 }
             }).value();
             pikachu.unshift(formattedStylists);
-             return _.flattenDeep(pikachu);
+            return _.flattenDeep(pikachu);
         }
 
     }]);

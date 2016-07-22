@@ -58,7 +58,7 @@
                     <div id="fnd-stl-search-input-container">
                         <p class="control">
                             <span class="select is-large">
-                                <select name="fnd-styl-location" id="fnd-styl-location">
+                                <select ng-model="data.location" name="fnd-styl-location" id="fnd-styl-location">
                                     <option value="">Enter Location</option>
                                     <option value="Houston, TX">Houston, TX</option>
                                     <option value="Atlanta, GA">Atlanta, GA</option>
@@ -69,14 +69,17 @@
                         </p>
                         <p class="control">
                             <span class="select is-large">
-                                <select name="fnd-styl-location" id="fnd-styl-location">
+                                <select ng-model="data.hairstyle" name="fnd-styl-location" id="fnd-styl-location">
                                     <option value="">Hairstyle</option>
-                                    <option value="Houston">Houston, Texas</option>
+                                    <option value="bobcuts">bobcuts</option>
+                                    <option value="braids">braids</option>
+                                    <option value="bun">bun</option>
+                                    <option value="bunches">bunches</option>
                                 </select>
                             </span>
                         </p>
                         <p class="control">
-                            <button class="button action-btn is-medium">Search</button>
+                            <button ng-click="searchForStylist()" class="button action-btn is-medium">Search</button>
                         </p>
                     </div>
                 </div>
