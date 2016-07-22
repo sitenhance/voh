@@ -12,7 +12,7 @@
         $scope.stylists = findFeaturedStylists();
 
         //Find Stylists that do certain haircuts
-        function findSpecialties(pickedStyle) {
+        function findSpecialties(stylists, pickedStyle) {
             var specialStylists = _.chain(stylists)
                 .filter(function (item) {
 
@@ -42,22 +42,24 @@
         }
 
         function searchForStylists(location, hairstyle) {
-            var locationArray = location.split(', ');
-            locationArray[1]);
-        if (hairstyle === null) {
-            var stylistsInLocation = findLocation(locationArray[0],locationArray[1]);
-            $scope.stylists = stylistsInLocation;
-        } else if (location === null) {
-            var stylistsSpecialty = findSpecialties(hairstyle);
-            $scope.stylists = stylistsSpecialty;
-        } else {
-            
+            if (hairstyle === null) {
+                var locationArray = location.split(', ');
+                var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);
+                $scope.stylists = stylistsInLocation;
+            } else if (location === null) {
+                var stylistsSpecialty = findSpecialties(stylists, hairstyle);
+                $scope.stylists = stylistsSpecialty;
+            } else {
+                var locationArray = location.split(', ');
+                var stylistsInlocation = findLocation(locationArray[0], locationArray[1]);
+                $scope.stylists = findSpecialties(stylistsInLocation, hairstyle);
+            }
+            return $scope.stylists;
         }
+        console.log(searchForStylists(null, 'braid'));
+
 
         //Find stylists by city and state
-        var location = 'Houston, TX';
-        var locationArray = location.split(', ');
-
         function findLocation(city, state) {
             var stylistsInLocation = _.chain(stylists)
                 .filter(function (item) {
@@ -70,7 +72,6 @@
                 .value();
             return stylistsInLocation;
         }
-        findLocation(locationArray[0], locationArray[1]);
 
         //Move featured stylists to the top
         function featuredFirst(pikachu) {
@@ -84,5 +85,5 @@
             return _.flattenDeep(pikachu);
         }
 
-    }]);
+                }]);
 }());
