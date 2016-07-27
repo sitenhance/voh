@@ -22,7 +22,8 @@ vohApp.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('stylist', {
             url: '/stylist/:id',
-            templateUrl: '../single-stylist.html'
+            templateUrl: 'js/app/stylists/single-stylist.html',
+            controller: 'stylistCtrl'
         });
 
 

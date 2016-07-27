@@ -52,14 +52,14 @@
                             <div class="content voh-card-content">
                                 <h1>{{stylist.name}}</h1>
                                 <p>{{stylist.city}}, {{stylist.state}}</p>
-                                <a href="single-stylist.html" class="button read-more-btn">Read More</a>
+                                <a ui-sref="stylist({id: stylist.id})" class="button read-more-btn">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End of Card Grid -->
                 <div id="load-more-container">
-                    <a ui-sref="stylist({id: stylist.id})" class="button load-btn is-large">Load More</a>
+                    <a href="#" class="button load-btn is-large">Load More</a>
                 </div>
             </div>
         </div>

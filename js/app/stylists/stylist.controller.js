@@ -1,7 +1,15 @@
 (function () {
-    vohApp.controller('stylistCtrl', ['$scope', function ($scope) {
+    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
+        console.log(stylists);
+        //Function to check if $stateParams is empty
+        function isEmpty(obj) {
+            for (var prop in obj) {
+                if (obj.hasOwnProperty(prop))
+                    return false;
+            }
 
-        console.log('Hey-llo');
+            return true && JSON.stringify(obj) === JSON.stringify({});
+        }
 
         //Find Stylists That Are Featured
         function findFeaturedStylists() {
@@ -36,11 +44,14 @@
             return specialStylists;
         }
 
+
+        //Data Object for Find Stylists Drop Down Menu Selections
         $scope.data = {
             hairstyle: null,
             location: null
         };
 
+        // Function for when the user chooses options in the Hero Dropdown in Find Stylists page
         $scope.searchForStylists = function (location, hairstyle) {
             if (hairstyle === null) {
                 var locationArray = location.split(', ');
@@ -85,5 +96,15 @@
             return _.flattenDeep(pikachu);
         }
 
-                }]);
+        //================ Single Stylist Logic ==================//
+        if(!isEmpty($stateParams)) {
+            console.log($stateParams);
+            _.chain(stylists).filter(function(item) {
+                if(item.id === Number($stateParams.id)) {
+                    $scope.stylist = item;
+                }
+            }).value();
+        }
+
+    }]);
 }());

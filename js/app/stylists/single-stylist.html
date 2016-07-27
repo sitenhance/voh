@@ -1,0 +1,253 @@
+<!-- Stylist Header -->
+<section class="section" id="top-header">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12 has-text-centered">
+                <div id="top-header">
+                    <h1>{{stylist.name}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="stylist-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half stylists-top-box">
+                <div class="specialty-box">
+                    <div class="specialty-container">
+                        <div class="specialty-header">
+                            <div class="specialty-icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="specialty-title">
+                                <h1>Specialty</h1>
+                            </div>
+                        </div>
+                        <!-- End of Specialty Header -->
+                        <div class="specialty-skills">
+                            <ul>
+                                <li class="specialty-skill" ng-repeat="skill in stylist.specialty">- {{skill}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Specialty Box -->
+            </div>
+            <div class="column is-half stylists-top-box">
+                <div class="stylist-bio-box">
+                    <div class="stylist-bio-container">
+                        <div class="stylist-bio-header has-text-centered">
+                            <h1>Bio</h1>
+                        </div>
+                        <!-- End Of Stylist Bio Header -->
+                        <div class="stylist-bio-content content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum,
+                                ac facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate.
+                                Quisque sed sem felis. Pellentesque ac bibendum sapien, vitae pulvinar lacus. Aliquam erat
+                                volutpat. Pellentesque magna velit, vehicula ut rhoncus non, porta ut lectus. Nulla facilisi.
+                                Donec consequat, lacus molestie tristique malesuada, nisl nibh sagittis leo, pretium imperdiet
+                                nulla nibh sit amet nisi. Fusce id ultrices elit. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Gallery -->
+<section class="section" id="stylist-gallery-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="fotorama" data-nav='thumbs' data-arrows="true" data-autoplay="true">
+                    <img src="images/gallery-one-lg.jpg" data-caption="Here is the caption one" alt="">
+                    <img src="images/gallery-two-lg.jpg" data-caption="Here is the caption two" alt="">
+                    <img src="images/gallery-three-lg.jpg" data-caption="Here is the caption three" alt="">
+                    <img src="images/gallery-four-lg.jpg" data-caption="Here is the caption four" alt="">
+                    <img src="images/gallery-five-lg.jpg" data-caption="Here is the caption five" alt="">
+                    <img src="images/gallery-six-lg.jpg" data-caption="Here is the caption six" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info -->
+<section class="section" id="stylist-contact-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="stylist-contact-box">
+                    <div class="stylist-contact-header">
+                        <div class="stylist-contact-icon">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="stylist-contact-title">
+                            <h1>Contact</h1>
+                        </div>
+                    </div>
+                    <!-- End of Stylist Contact Header -->
+                    <div class="stylist-phone">
+                        <p class="contact-box-title">
+                            Phone</p>
+                        <p>{{stylist.phone}}</p>
+                    </div>
+                    <div class="stylist-email">
+                        <p class="contact-box-title">
+                            Email</p>
+                        <p>{{stylist.email}}</p>
+                    </div>
+                    <div class="stylist-website">
+                        <p class="contact-box-title">
+                            Website</p>
+                        <a ng-href="#">{{stylist.website}}</a>
+                    </div>
+                </div>
+                <!-- End of Stylist Contact Box -->
+            </div>
+            <div class="column">
+                <div class="stylist-request-info">
+                    <button class="button action-btn is-large">Request Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="social-salon-info-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="social-salon-address">
+                    <div class="stylist-social-icons">
+                        <a href="#" class="social-icon"><img src="images/insta-icon.png" alt=""></a>
+                        <a href="#" class="social-icon"><img src="images/pinterest-icon.png" alt=""></a>
+                        <a href="#" class="social-icon"><img src="images/facebook-icon.png" alt=""></a>
+                        <a href="#" class="social-icon"><img src="images/twitter-icon.png" alt=""></a>
+                        <a href="#" class="social-icon"><img src="images/g-plus-icon.png" alt=""></a>
+                    </div>
+                    <div class="stylist-salon-address">
+                        <div class="salon-name">
+                            <p>Beautiful Salon</p>
+                        </div>
+                        <div class="salon-address">
+                            <p>12345 Long Hair St. Austin, TX 77777</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Of Social Salon Address -->
+            </div>
+            <div class="column is-half">
+                <div class="google-map">
+                    <p>Google Map Code Goes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="facebook-comments-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                facebook comment plugin goes here
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="addition-stylists">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="additional-stylist-header has-text-centered">
+                    <h1>Additional Stylists You Might Be Interested In</h1>
+                </div>
+                <div class="additional-stylists-display">
+                    <div class="level">
+                        <div class="level-item">
+                            <a href="#">
+                                <div class="additional-stylist-box">
+                                    <article class="media">
+                                        <figure class="media-left">
+                                            <p class="image is-48x48">
+                                                <img src="images/sb-contributor-one.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="content additional-stylist-content">
+                                                <p>Stylist One</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Of Level Item -->
+                        <div class="level-item">
+                            <a href="#">
+                                <div class="additional-stylist-box">
+                                    <article class="media">
+                                        <figure class="media-left">
+                                            <p class="image is-48x48">
+                                                <img src="images/sb-contributor-two.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="content additional-stylist-content">
+                                                <p>Stylist Two</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Of Level Item -->
+                        <div class="level-item">
+                            <a href="#">
+                                <div class="additional-stylist-box">
+                                    <article class="media">
+                                        <figure class="media-left">
+                                            <p class="image is-48x48">
+                                                <img src="images/sb-contributor-three.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="content additional-stylist-content">
+                                                <p>Stylist Three</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Of Level Item -->
+                        <div class="level-item">
+                            <a href="#">
+                                <div class="additional-stylist-box">
+                                    <article class="media">
+                                        <figure class="media-left">
+                                            <p class="image is-48x48">
+                                                <img src="images/sb-contributor-one.jpg" alt="">
+                                            </p>
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="content additional-stylist-content">
+                                                <p>Stylist Four</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Of Level Item -->
+                    </div>
+                </div>
+                <!-- End Of Additional Stylists Display -->
+            </div>
+        </div>
+    </div>
+</section>
