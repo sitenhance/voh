@@ -1,6 +1,8 @@
 (function () {
     vohApp.controller('stylistCtrl', ['$scope', function ($scope) {
 
+        console.log('Hey-llo');
+
         //Find Stylists That Are Featured
         function findFeaturedStylists() {
             var featuredStylists = _.filter(stylists, {

@@ -1,0 +1,67 @@
+<!-- Hero Section -->
+<section class="hero" id="find-stylists-hero">
+    <div class="hero-body" id="fnd-styl-hero-body">
+        <div class="container">
+            <div id="fnd-stl-search">
+                <div id="fnd-stl-search-input-container">
+                    <p class="control">
+                        <span class="select is-large">
+                                <select ng-model="data.location" name="fnd-styl-location" id="fnd-styl-location">
+                                    <option value="">Enter Location</option>
+                                    <option value="Houston, TX">Houston, TX</option>
+                                    <option value="Atlanta, GA">Atlanta, GA</option>
+                                    <option value="Los Angeles, CA">Los Angeles, CA</option>
+                                    <option value="St. Louis, MO">St. Louis, MO</option>
+                                </select>
+                            </span>
+                    </p>
+                    <p class="control">
+                        <span class="select is-large">
+                                <select ng-model="data.hairstyle" name="fnd-styl-location" id="fnd-styl-location">
+                                    <option value="">Hairstyle</option>
+                                    <option value="bobcuts">bobcuts</option>
+                                    <option value="braids">braids</option>
+                                    <option value="bun">bun</option>
+                                    <option value="bunches">bunches</option>
+                                </select>
+                            </span>
+                    </p>
+                    <p class="control">
+                        <button ng-click="searchForStylists(data.location, data.hairstyle)" class="button action-btn is-medium">Search</button>
+                    </p>
+                </div>
+            </div>
+            <!-- End Of Fnd Styl Search -->
+        </div>
+    </div>
+</section>
+
+<!-- Featured Hair Stylist In Your Area -->
+<section class="section" id="featured-stylists">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12" id="fs-container">
+                <div class="card-grid">
+                    <div class="card voh-card-3" ng-repeat="stylist in stylists">
+                        <div class="card-image voh-card-image">
+                            <figure class="image is-3by2">
+                                <img src="images/fs-one.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content voh-card-content">
+                                <h1>{{stylist.name}}</h1>
+                                <p>{{stylist.city}}, {{stylist.state}}</p>
+                                <a href="single-stylist.html" class="button read-more-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card Grid -->
+                <div id="load-more-container">
+                    <a ui-sref="stylist({id: stylist.id})" class="button load-btn is-large">Load More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
