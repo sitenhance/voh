@@ -3,7 +3,7 @@ var stylists = [
         id: 1,
         name: 'Brandy Green',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -56,7 +56,7 @@ var stylists = [
         id: 2,
         name: 'Stacy Nash',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bun'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -109,7 +109,7 @@ var stylists = [
         id: 3,
         name: 'Brittany Cash',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -162,7 +162,7 @@ var stylists = [
         id: 4,
         name: 'Ashley Moore',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -215,7 +215,7 @@ var stylists = [
         id: 5,
         name: 'Ashley Gray',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -268,7 +268,7 @@ var stylists = [
         id: 6,
         name: 'Gina Bash',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['braids', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -321,7 +321,7 @@ var stylists = [
         id: 7,
         name: 'Tina Mash',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -374,7 +374,7 @@ var stylists = [
         id: 8,
         name: 'Brianna Davis',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcutsa', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bun'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -427,7 +427,7 @@ var stylists = [
         id: 9,
         name: 'Melanie Jones',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcutsa', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -480,7 +480,7 @@ var stylists = [
         id: 11,
         name: 'Melissa Bones',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcutsa', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'braids', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -533,7 +533,7 @@ var stylists = [
         id: 12,
         name: 'Melissa Grayson',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['bobcuts', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
@@ -586,7 +586,7 @@ var stylists = [
         id: 13,
         name: 'Stacy McGrady',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braid', 'bun', 'bunches'],
+        specialty: ['braids', 'bun', 'bunches'],
         images: [
             {
                 'url': 'http://placehold.it/900x350'
