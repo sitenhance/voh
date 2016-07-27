@@ -25,14 +25,11 @@
                     }).value();
 
                     if (singleStylist.length !== 0) {
-                        console.log(singleStylist);
-                        console.log(item);
                         return item;
                     }
 
                 })
                 .value();
-            console.log(specialStylists);
 
             return specialStylists;
         }
@@ -43,7 +40,6 @@
         };
 
         $scope.searchForStylists = function (location, hairstyle) {
-            console.log(location, hairstyle);
             if (hairstyle === null) {
                 var locationArray = location.split(', ');
                 var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);

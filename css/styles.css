@@ -116,13 +116,18 @@ div#nav-columns > div.column {
 div.card-grid {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 2em;
     flex-wrap: wrap;
+    width: 100%;
 }
 div.voh-card-3 {
     width: 31.33%;
     margin-bottom: 1.5em;
+    margin-right: 1.5em;
+}
+div.voh-card-3:nth-child(3n+0) {
+    margin-right: 0;
 }
 figure.voh-video > video {
     width: 100%;
