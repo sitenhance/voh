@@ -12,25 +12,6 @@
         $scope.stylists = findFeaturedStylists();
 
         //Find Stylists that do certain haircuts
-<<<<<<< HEAD
-        function findSpecialties(stylists, pickedStyle) {
-            console.log(stylists);
-            // var specialStylists = _.chain(stylists)
-            //     .filter(function (item) {
-
-            //         var singleStylist = _.chain(item.specialty).filter(function (hairstyle) {
-            //             if (hairstyle === pickedStyle) {
-            //                 return true;
-            //             } else { return false; }
-            //         }).value();
-
-            //         if (singleStylist.length !== 0) {
-            //             return item;
-            //         }
-
-            //     })
-            //     .value();
-=======
         function findSpecialties(stylistsArg, pickedStyle) {
             var specialStylists = _.chain(stylistsArg)
                 .filter(function (item) {
@@ -52,7 +33,6 @@
                 })
                 .value();
             console.log(specialStylists);
->>>>>>> efbe4f136475ee53a69c85d1a768639272703ec6
 
             return specialStylists;
         }
@@ -60,7 +40,7 @@
         $scope.data = {
             hairstyle: null,
             location: null
-        }
+        };
 
         $scope.searchForStylists = function (location, hairstyle) {
             console.log(location, hairstyle);
@@ -78,8 +58,7 @@
                 $scope.stylists = findSpecialties(stylistsInLocation, hairstyle);
             }
             return $scope.stylists;
-            console.log($scope.stylists);
-        }
+        };
 
 
         //Find stylists by city and state
