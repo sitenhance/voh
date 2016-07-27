@@ -25,7 +25,7 @@
             </a>
             <a href="index.html" class="nav-item">HOME</a>
             <a href="about.html" class="nav-item">ABOUT</a>
-            <a href="find-stylist.html" class="nav-item">FIND STYLISTS</a>
+            <a ui-sref="find-stylists" class="nav-item">FIND STYLISTS</a>
             <a href="#" class="nav-item">PRODUCTS</a>
             <a href="experts.html" class="nav-item">EXPERTS</a>
             <a href="for-stylists.html" class="nav-item">FOR STYLISTS</a>
@@ -36,138 +36,7 @@
         <!-- end of nav-left -->
     </nav>    
 
-    <!-- Hero Section -->
-    <section class="hero" id="home-hero">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 id="home-hero-title">Find The Best Stylist For Your Hair</h1>
-                <h2 id="home-hero-subtitle">I Need Help Finding...</h2>
-                <div id="home-hairstyle-dropdown">
-                    <p class="control">
-                        <span class="select">
-                            <select name="hairstyles" id="home-find-hairstyle">
-                                <option value="" selected></option>
-                                <option value="option_2">Option 2</option>
-                                <option value="option_2">Really long option and stuff</option>
-                            </select>
-                        </span>
-                    </p>
-                    <a href="#" class="button action-btn is-medium">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12" id="home-hiw">
-                    <div id="hiw-header" class="has-text-centered">
-                        <h1>How It Works</h1>
-                    </div>
-                    <div id="hiw-links">
-                        <a href="find-stylist.html">
-                            <div class="hiw-card">
-                                <div class="hiw-image">
-                                    <img src="images/hiw-stylist.jpg" alt="">
-                                </div>
-                                <div class="hiw-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum, ac facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate. Quisque sed sem felis.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="experts.html">
-                            <div class="hiw-card">
-                                <div class="hiw-image">
-                                    <img src="images/hiw-experts.jpg" alt="">
-                                </div>
-                                <div class="hiw-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum, ac facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate. Quisque sed sem felis.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="hiw-card">
-                                <div class="hiw-image">
-                                    <img src="images/hiw-shop.jpg" alt="">
-                                </div>
-                                <div class="hiw-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum, ac facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate. Quisque sed sem felis.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end of HIW Links -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Hair Stylist In Your Area -->
-    <section class="section" id="featured-stylists" ng-controller="stylistCtrl">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12" id="fs-container">
-                    <div class="section-header has-text-centered">
-                        <h1>Featured Hair Stylists</h1>
-                    </div>
-                    <div class="card-grid">
-                        <div class="card voh-card-3" ng-repeat="stylist in stylists">
-                            <div class="card-image voh-card-image">
-                                <figure class="image is-3by2">
-                                    <img src="images/fs-one.jpg" alt="">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content voh-card-content">
-                                    <h1>{{stylist.name}}</h1>
-                                    <p>{{stylist.city}}, {{stylist.state}}</p>
-                                    <a href="single-stylist.html" class="button read-more-btn">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Card Grid -->
-                    <div id="load-more-container">
-                        <a href="#" class="button load-btn is-large">Load More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ad Section and Facebook Social -->
-    <section class="section" id="Home-Ad-Social">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-two-thirds">
-                    <div id="home-ad">
-                        <img src="images/home-ad.jpg" alt="">
-                    </div>
-                </div>
-                <div class="column">
-                    <div id="social-sidebar">
-                        <div class="scl-sb-header has-text-centered">
-                            <h2>Follow Us On The Web!</h2>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Instagram Plugin Section -->
-    <section class="section" id="home-social-plugin">
-        <div class="columns">
-            <div class="column is-12">
-                <div id="hm-scl-header" class="has-text-centered">
-                    <!--<h1>Featured Hair Stylists On Instagram</h1>-->
-                </div>
-            </div>
-        </div>
-    </section>
+    <div ui-view></div>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -227,6 +96,7 @@
     </div>
 <script src="js/vendor/jquery-3.0.0.min.js"></script>
 <script src="js/vendor/angular.min.js"></script>
+<script src="js/vendor/angular-ui-router.min.js"></script>
 <script src="js/vendor/lodash.min.js"></script>
 <script src="js/vendor/stylist.js"></script>
 
