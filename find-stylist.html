@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="vohApp">
 <head>
     <meta charset="UTF-8">
     <title>Voice Of Hair</title>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body ng-controller="stylistCtrl">
     <!-- User Account Section -->
     <div class="columns">
         <div class="column is-2 is-offset-10 account-section">
@@ -79,7 +79,7 @@
                             </span>
                         </p>
                         <p class="control">
-                            <button ng-click="searchForStylist()" class="button action-btn is-medium">Search</button>
+                            <button ng-click="searchForStylists(data.location, data.hairstyle)" class="button action-btn is-medium">Search</button>
                         </p>
                     </div>
                 </div>
@@ -250,6 +250,14 @@
             </div>
         </div>
     </div>
-<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/vendor/jquery-3.0.0.min.js"></script>
+<script src="js/vendor/angular.min.js"></script>
+<script src="js/vendor/lodash.min.js"></script>
+<script src="js/vendor/stylist.js"></script>
+
+<!--Angular Application-->
+<script src="js/app/app.js"></script>
+
+<script src="js/app/stylists/stylist.controller.js"></script>
 </body>
 </html>

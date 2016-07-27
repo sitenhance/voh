@@ -12,8 +12,8 @@
         $scope.stylists = findFeaturedStylists();
 
         //Find Stylists that do certain haircuts
-        function findSpecialties(stylists, pickedStyle) {
-            var specialStylists = _.chain(stylists)
+        function findSpecialties(stylistsArg, pickedStyle) {
+            var specialStylists = _.chain(stylistsArg)
                 .filter(function (item) {
 
                     var singleStylist = _.chain(item.specialty).filter(function (hairstyle) {
@@ -25,23 +25,25 @@
                     }).value();
 
                     if (singleStylist.length !== 0) {
+                        console.log(singleStylist);
+                        console.log(item);
                         return item;
                     }
 
                 })
                 .value();
+            console.log(specialStylists);
 
             return specialStylists;
         }
-
-        findSpecialties('bobcuts');
 
         $scope.data = {
             hairstyle: null,
             location: null
         }
 
-        function searchForStylists(location, hairstyle) {
+        $scope.searchForStylists = function (location, hairstyle) {
+            console.log(location, hairstyle);
             if (hairstyle === null) {
                 var locationArray = location.split(', ');
                 var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);
@@ -50,13 +52,14 @@
                 var stylistsSpecialty = findSpecialties(stylists, hairstyle);
                 $scope.stylists = stylistsSpecialty;
             } else {
+                console.log('Hey');
                 var locationArray = location.split(', ');
-                var stylistsInlocation = findLocation(locationArray[0], locationArray[1]);
+                var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);
                 $scope.stylists = findSpecialties(stylistsInLocation, hairstyle);
             }
             return $scope.stylists;
+            console.log($scope.stylists);
         }
-        console.log(searchForStylists(null, 'braid'));
 
 
         //Find stylists by city and state
