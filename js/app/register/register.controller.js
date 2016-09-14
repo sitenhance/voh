@@ -4,7 +4,7 @@
         $scope.data = {};
         
         $scope.submitUser = function() {
-            console.log('hi');
+            usersService.signUpInfo($scope.data.name, $scope.data.email, $scope.data.password);
         }
         
     }]);

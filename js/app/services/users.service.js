@@ -1,5 +1,5 @@
 (function() {
-    vohApp.factory('usersService', [function() {
+    vohApp.factory('usersService', [ '$rootScope', function($rootScope) {
         
         var usersService = {};
         
@@ -24,6 +24,19 @@
         usersService.state = '';
         
         usersService.country = '';
+        
+        usersService.broadcastUserSignUp = function() {
+            $rootScope.$broadcast('handleSignUp');
+        };
+        
+        usersService.signUpInfo = function(name, email, password) {
+            usersService.name = name;
+            usersService.email = email;
+            usersService.password = password;
+            usersService.broadcastUserSignUp();
+        };
+        
+        return usersService;
         
     }]);
 }());
