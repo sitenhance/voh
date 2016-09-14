@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     height: 100%;
     font-family: 'Lato', sans-serif;
@@ -8,8 +9,8 @@ body {
     font-weight: 400;
     background: #fff;
 }
-
 /*  Fotorama */
+
 .fotorama__caption__wrap {
     padding: 1em;
     background: #48a4ab;
@@ -18,107 +19,121 @@ body {
     width: 100%;
     font-size: 1.5em;
 }
-
 /* Button Component Styles */
+
 .action-btn {
     background-color: #d51546;
     color: #fff;
     border: 0;
 }
+
 .action-btn:hover {
     background-color: #a61136;
     color: #fff;
 }
+
 .read-more-btn {
     background-color: #57c6cd;
     color: #fff;
     border: 0;
 }
+
 .read-more-btn:hover {
     background-color: #48a4ab;
     color: #fff;
 }
+
 .load-btn {
     background-color: #cc9880;
     color: #fff;
     border: 0;
 }
+
 .load-btn:hover {
     background-color: #a17865;
     color: #fff;
 }
+
 .account-btn {
     background-color: #d51546;
     color: #fff;
     border: 0;
-    border-radius: 25px;;
+    border-radius: 25px;
+    ;
 }
+
 .account-btn:hover {
     background-color: #a61136;
     color: #fff;
 }
+
 .contact-btn {
     background-color: #2976ec;
     color: #fff;
     border: 0;
     border-radius: 25px;
 }
+
 .contact-btn:hover {
     background-color: #18417f;
     color: #fff;
 }
 /* End of Button */
-
-
-
 /* Social Icon Styles */
+
 .social-icon {
     margin-right: 1.5em;
 }
+
 .social-icon:last-child {
     margin: 0;
 }
-
 /* Account Sign In Shopping Component Styles */
+
 .account-section {
     margin-top: 1em;
 }
 /* End of Account/Sign In/Shopping */
-
-
-
 /* Navigation Component Styles */
+
 .nav {
     background-color: #57c6cd;
 }
+
 img.logo-img {
     max-height: 64px;
 }
+
 a.nav-item:first-child {
     margin-right: 1.5em;
 }
+
 a.nav-item {
     font-size: 1.250em;
     color: #321e13;
 }
+
 a.nav-item:hover {
     color: #fff;
 }
+
 div#nav-columns {
     margin-bottom: 0;
 }
+
 div#nav-columns > div.column {
     padding-bottom: 0;
 }
-.ng-sticky-fixed{
-top:0;
-left:0;
-position:fixed;
-width:100%;
+
+.ng-sticky-fixed {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
 }
 /* End of Navigation */
-
 /* Card Component Styles */
+
 div.card-grid {
     display: flex;
     flex-direction: row;
@@ -127,98 +142,113 @@ div.card-grid {
     flex-wrap: wrap;
     width: 100%;
 }
+
 div.voh-card-3 {
     width: 31.33%;
     margin-bottom: 1.5em;
     margin-right: 1.5em;
 }
+
 div.voh-card-3:nth-child(3n+0) {
     margin-right: 0;
 }
+
 figure.voh-video > video {
     width: 100%;
 }
-
 /* Quote Card Component */
+
 div.quote-card {
     background-color: #321e13;
     color: #fff;
 }
+
 div.quote-card-3 {
     width: 31.33%;
 }
+
 header.card-header {
     border-bottom: 1px solid #fff;
 }
+
 header.card-header > p {
     color: #fff;
 }
+
 div.quote-card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-div.quote-card-content > i, div.quote-card-content > p {
+
+div.quote-card-content > i,
+div.quote-card-content > p {
     margin-bottom: 1em;
 }
+
 div.quote-card-content > p {
     font-size: 1.25em;
 }
+
 div.quote-card-content > p.quote-author {
     font-size: 1.15em;
     font-weight: 700;
     margin-top: 1.25em;
     margin-bottom: .25em;
 }
+
 p.quote-author-title {
     font-size: .75em;
     font-weight: 300;
 }
-
 /* Image Gallery Component */
+
 div.image-gallery {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .gallery-item {
     margin-bottom: 1em;
 }
+
 .gallery-4 {
     width: 24%;
 }
-
 /* Single Video Styles */
+
 section#video-top-video {
     padding-top: 0;
 }
+
 section#video-content-section {
     padding-top: 0;
 }
+
 div.video-post-social {
     margin-bottom: 2em;
 }
+
 div.video-content {
     font-size: 1.25em;
 }
-
 /* Top Header Component */
+
 div#top-header > h1 {
     font-size: 2.500em;
     color: #321e13;
-
 }
-
 /* Section Header */
+
 div.section-header > h1 {
     font-size: 2.500em;
     color: #321e13;
     margin-bottom: 1.25em;
 }
-
-
 /* Home Hero Component Styles */
+
 section#home-hero {
     background-image: url('../images/home-hero-img.jpg');
     background-position: center;
@@ -226,22 +256,27 @@ section#home-hero {
     min-height: 500px;
     color: #fff;
 }
+
 h1#home-hero-title {
     font-size: 5.000em;
     font-weight: 700;
     margin-bottom: .5em;
 }
+
 h2#home-hero-subtitle {
     font-size: 2.000em;
 }
+
 div#home-hairstyle-dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 span.select {
     margin-top: 2em;
 }
+
 select#home-find-hairstyle {
     background: none;
     border: 0;
@@ -249,65 +284,79 @@ select#home-find-hairstyle {
     font-size: 24px;
     padding-right: 40px;
 }
+
 div#home-hairstyle-dropdown > a {
     margin-top: 2em;
 }
 /* End of Hero Component */
-
 /* Social Input Component */
+
 div.social-input {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 1em;
 }
+
 img.input-scl-icon {
     margin-right: 1em;
 }
-
 /* For Stylists */
-div.fr-stylists-frm > label, div.fr-stylists-frm > p.control > label {
+
+div.fr-stylists-frm > label,
+div.fr-stylists-frm > p.control > label {
     font-size: 1.5em;
     margin: 1em 0;
 }
+
 div.fr-stylists-form-container {
     display: flex;
     flex-direction: column;
 }
+
 div.fr-stylists-frm-intro {
     margin-bottom: 2em;
 }
+
 div.fr-stylists-frm-intro h1 {
     color: #57c6cd;
     font-size: 2em;
 }
+
 div.fr-stylists-frm-intro h2 {
     color: #414e61;
     font-size: 1.5em;
 }
+
 label.fr-stylist-check-radio > input {
     margin-left: 1em;
 }
+
 label.fr-stylist-check-radio > input {
     margin-right: .5em;
 }
+
 div.fr-stylists-form-container > div#load-more-container {
     align-self: center;
 }
-
 /* Stylist Styles */
+
 section#stylist-section {
     padding-top: 0;
 }
+
 div.stylists-top-box {
     display: flex;
 }
+
 section#stylist-gallery-section {
     padding-top: 0;
 }
+
 section#stylist-contact-section {
     padding-top: 0;
 }
+
 div.stylist-request-info {
     display: flex;
     flex-direction: column;
@@ -315,49 +364,60 @@ div.stylist-request-info {
     justify-content: center;
     height: 100%;
 }
+
 div.social-salon-address {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.stylist-social-icons {
     margin-bottom: 2em;
 }
+
 div.stylist-salon-address {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.salon-name > p {
     font-size: 2em;
     color: #414e61;
 }
+
 div.salon-address > p {
     font-size: 1.5em;
     color: #414e61;
 }
-
 /* Single Blog Post Styles */
+
 section#blog-post-section {
     padding-top: 0;
 }
+
 section#addition-articles {
     padding-bottom: 0;
 }
+
 div#single-post-comments {
     border-top: 1px solid #321e13;
     padding-top: 1em;
 }
+
 div.blog-post-hero {
     margin-bottom: 1em;
 }
+
 div.blog-post-social {
     margin-bottom: 2em;
 }
+
 div.blog-post-content > div > p {
     font-size: 1.25em;
     color: #414e61;
 }
+
 div.hero {
     background-image: url('../images/blog-img-six-lg.jpg');
     background-position: center;
@@ -365,31 +425,36 @@ div.hero {
     min-height: 500px;
     color: #fff;
 }
-
 /* Additional Stylists Component */
+
 div.additional-stylist-header {
     padding-bottom: 1.5em;
     border-bottom: 1px solid #828c8e;
     margin-bottom: 2em;
 }
+
 div.additional-stylist-header > h1 {
     font-size: 2em;
 }
+
 div.additional-stylists-display {
     margin-bottom: 2.5em;
 }
+
 div.additional-stylist-content > p {
     font-size: 1.5em;
 }
+
 article.add-article {
     flex-direction: column;
     align-items: center;
 }
+
 article.add-article > figure {
     margin-bottom: 1.5em;
 }
-
 /* Stylist Contact Component */
+
 div.stylist-contact-box {
     width: 100%;
     background-color: #321e13;
@@ -401,28 +466,38 @@ div.stylist-contact-box {
     justify-content: space-between;
     align-items: center;
 }
+
 div.stylist-contact-header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.stylist-contact-icon > i {
     font-size: 3.25em;
 }
+
 div.stylist-contact-title > h1 {
     font-size: 2em;
 }
-div.stylist-email > p, div.stylist-phone > p, div.stylist-website > a {
+
+div.stylist-email > p,
+div.stylist-phone > p,
+div.stylist-website > a {
     font-size: 1.5em;
 }
+
 div.stylist-website > a:hover {
     color: #d51546;
 }
-div.stylist-email > p.contact-box-title, div.stylist-phone > p.contact-box-title, div.stylist-website > p.contact-box-title {
+
+div.stylist-email > p.contact-box-title,
+div.stylist-phone > p.contact-box-title,
+div.stylist-website > p.contact-box-title {
     font-size: 1.25em;
 }
-
 /* Specialty Box Component */
+
 div.specialty-box {
     width: 100%;
     background-color: #48a4ab;
@@ -430,35 +505,41 @@ div.specialty-box {
     border-radius: 25px;
     color: #fff;
 }
+
 div.specialty-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.specialty-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2em;
 }
+
 div.specialty-icon i {
     font-size: 3em;
 }
+
 div.specialty-title h1 {
     font-size: 2em;
 }
+
 div.specialty-skills > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 div.specialty-skills > ul > li {
     margin-right: 1em;
     font-size: 1.5em;
 }
-
 /* Stylist Bio Component */
+
 div.stylist-bio-box {
     background-color: #321e13;
     color: #fff;
@@ -466,23 +547,25 @@ div.stylist-bio-box {
     width: 100%;
     padding: 2em;
 }
+
 div.stylist-bio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.stylist-bio-header {
     border-bottom: 1px solid #fff;
     padding-bottom: 1em;
     width: 100%;
     margin-bottom: 1em;
-} 
+}
+
 div.stylist-bio-header h1 {
     font-size: 2em;
 }
-
-
 /* Find Stylist Hero Component */
+
 section#find-stylists-hero {
     background-image: url('../images/find-stylist-hero.jpg');
     background-position: center;
@@ -491,8 +574,8 @@ section#find-stylists-hero {
     color: #fff;
     margin-bottom: 2em;
 }
-
 /* For Stylists Hero Component */
+
 section#for-stylists-hero {
     background-image: url('../images/for-stylists-hero.jpg');
     background-position: center;
@@ -502,6 +585,7 @@ section#for-stylists-hero {
     margin-bottom: 2em;
     background-size: cover;
 }
+
 section#contact-hero {
     background-image: url('../images/contact.png');
     background-position: center;
@@ -511,141 +595,167 @@ section#contact-hero {
     margin-bottom: 2em;
     background-size: cover;
 }
-
 /* Hairspiration Gallery Styles */
+
 section#gallery-section {
     padding-top: 0;
 }
+
 div#gallery-hairspiration {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 /* Footer Component Styles */
+
 footer.footer {
     background: #321e13;
     color: #fff;
     padding-bottom: 40px;
     margin-top: 2em;
 }
-div#left-footer-section, div#right-footer-section {
+
+div#left-footer-section,
+div#right-footer-section {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
+
 div#footer-logo {
     margin-right: 1.5em;
 }
+
 div#footer-logo > a {
     border: 0;
 }
-#footer-slogan > p{
+
+#footer-slogan > p {
     font-size: 1.5em
 }
+
 #footer-join-slogan {
     margin-right: 1.5em;
 }
+
 #footer-join-slogan > p {
     font-size: 1.5em;
 }
-#footer-join-btn > a, #footer-join-btn > a:hover {
+
+#footer-join-btn > a,
+#footer-join-btn > a:hover {
     color: #fff;
     border: 0;
 }
+
 div#footer-social-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 div#footer-social-icons > a {
     border: 0;
 }
+
 div#bottom-footer {
     padding: 1em;
-    color:#828c8e;
+    color: #828c8e;
     font-size: 1.0em;
 }
+
 div#bottom-footer-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 div#bottom-footer-links > a {
     color: #828c8e;
 }
+
 div#bottom-footer-links > a:hover {
     color: #57c6cd;
 }
 /* End of Footer */
-
 /* Main Video Component */
+
 div.main-video > figure.video-fig > video {
     width: 100%;
 }
+
 div.main-video-description {
     margin-bottom: 4em;
 }
+
 div.main-video-description h1 {
     color: #57c6cd;
     font-size: 2em;
     margin-bottom: 1em;
 }
+
 div.main-video-description p {
     font-size: 1.5em;
     color: #3d4d65;
 }
-
 /* Courses Styles */
+
 section#courses-top-video {
     padding-top: 0;
 }
+
 div#courses-main-video {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.voh-book-description {
     font-size: 1.5em;
     color: #414e61
 }
+
 div.enroll-cta {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 div.enroll-cta h1 {
     font-size: 2em;
     color: #57c6cd;
     margin-bottom: 1em;
 }
-
-
 /* About Page */
+
 div.about-title > h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     text-align: center;
     margin: 20px 0;
     font-size: 40px;
-    color:#828c8e;
+    color: #828c8e;
     background-color: #ffffff
 }
+
 div.about-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff;
 }
+
 div.about-media {
     text-align: center;
     background-color: #ffffff;
 }
+
 div#about-social-icons {
     margin: 1em;
     background-color: #ffffff
 }
+
 div.about-content > h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -654,6 +764,7 @@ div.about-content > h1 {
     color: #321e13;
     background-color: #ffffff
 }
+
 div.about-content > h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -663,6 +774,7 @@ div.about-content > h2 {
     margin-bottom: 0.75em;
     background-color: #ffffff
 }
+
 div.about-content > p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -671,161 +783,180 @@ div.about-content > p {
     margin: 0.5em;
     background-color: #ffffff;
 }
+
 div.about-video {
     text-align: center;
     background-color: #ffffff;
 }
 /* End of About Page */
-
-
 /* How It Works Components */
+
 div#home-hiw {
     border-bottom: #828c8e solid 2px;
     padding-bottom: 2em;
 }
+
 div#hiw-header {
     margin-bottom: 1em;
     font-size: 2.500em;
 }
+
 div#hiw-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 div#hiw-links > a {
     color: #321e13;
 }
+
 div#hiw-links > a:hover {
     color: #d51546;
 }
+
 div.hiw-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 div.hiw-image {
     margin-bottom: 1em;
 }
 /* End Of How It Works */
-
-
-
 /* Featured Stylist Component Styles */
+
 section#featured-stylists {
     padding-top: 1.250em;
 }
+
 div#fs-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* End of Featured Stylist */
-
-
 /* Social Sidebar Component Styles */
+
 div#social-sidebar {
     display: flex;
     flex-direction: column;
     border: 1px solid #321e13;
     padding: 2.5em;
 }
+
 div.scl-sb-header {
     border-bottom: 1px solid #3d4d65;
     padding-bottom: .5em;
     margin-bottom: 1em;
 }
+
 div.scl-sb-header > h2 {
     font-size: 1.5em;
 }
+
 div.scl-sb-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 span.scl-sb-icon {
     margin-right: 1em;
 }
+
 span.scl-sb-icon:last-child {
     margin-right: 0;
 }
+
 span.scl-sb-icon > a {
     color: #3d4d65;
 }
+
 span.scl-sb-icon > a:hover {
     color: #414e61;
 }
+
 span.scl-sb-icon > a > i.fa {
     font-size: 32px;
 }
 /* End Of Social Sidebar Component */
-
-
-
 /* Home Instagram Social Plugin Component */
+
 div#hm-scl-header > h1 {
     font-size: 2.5em;
     color: #321e13;
 }
-
 /* Find Stylist Hero Search */
+
 div#fnd-styl-hero-body {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 div#fnd-stl-search {
     padding: 1.5em;
     background: #828c8e;
 }
+
 div#fnd-stl-search-input-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 div#fnd-stl-search-input-container > p.control {
     margin: 0;
 }
+
 div#fnd-stl-search-input-container > p > span.select {
     margin: 0;
     margin-right: 1em;
 }
-
 /* Blog Component Styles */
+
 div#blog-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 /* Sidebar Newsletter Component */
+
 div#sidebar-ad {
     width: 100%;
 }
+
 div#sidebar-ad img {
     width: 100%;
     display: block;
 }
+
 div.sidebar-newsletter {
     width: 100%;
     background: #321e13;
     color: #fff;
     padding: 1em;
 }
+
 div.sb-nl-text {
     margin-bottom: 1em;
 }
+
 div.sb-nl-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 div.sb-nl-form > p:first-child {
     margin-right: 1em;
 }
-
 /* Sidebar VOH Contributors Component */
+
 div.sidebar-contributors {
     width: 100%;
     background: #321e13;
@@ -836,18 +967,22 @@ div.sidebar-contributors {
     align-items: center;
     margin-top: 2em;
 }
+
 div.sb-contr-header {
     margin-bottom: 1em;
 }
+
 div.sb-contr-header > h1 {
     font-size: 2em;
 }
+
 div.sb-contr-images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 div.sb-contr-img {
     width: 23%;
     display: flex;
@@ -855,93 +990,111 @@ div.sb-contr-img {
     justify-content: center;
     margin-bottom: 1em;
 }
-
 /* Sidebar Social Icons Component */
+
 div.sidebar-social-section {
     width: 100%;
     padding: 1em;
     border: 1px solid #321e13;
     margin-top: 2em;
 }
+
 div.sb-scl-header {
     margin-bottom: 1em;
 }
+
 div.sb-scl-header > h1 {
     font-size: 1.5em;
     color: #321e13;
 }
+
 div.sb-scl-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 div.sb-scl-icons > a:not(:last-child) {
     margin-right: 1em;
 }
-
 /* Signup  */
-div.fr-stylists-frm > label, div.fr-stylists-frm > p.control > label {
+
+div.fr-stylists-frm > label,
+div.fr-stylists-frm > p.control > label {
     font-size: 1.5em;
     margin: 1em 0;
 }
+
 div.fr-stylists-form-container {
     display: flex;
     flex-direction: column;
 }
+
 div.fr-stylists-frm-intro {
     margin-bottom: 2em;
 }
+
 div.fr-stylists-frm-intro h1 {
     color: #57c6cd;
     font-size: 2em;
 }
+
 div.fr-stylists-frm-intro h2 {
     color: #414e61;
     font-size: 1.5em;
 }
+
 label.fr-stylist-check-radio > input {
     margin-left: 1em;
 }
+
 label.fr-stylist-check-radio > input {
     margin-right: .5em;
 }
+
 div.fr-stylists-form-container > div#load-more-container {
     align-self: center;
 }
-
 /* SignUp Page */
+
 div.signup-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 div.signup-boxes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 div#account-container {
+    margin-top: 20px;
     text-align: center;
 }
+
 label.signup-check-radio > input {
     margin-left: 1em;
     text-align: center;
 }
+
 label.signup-check-radio > input {
     margin-right: .5em;
 }
 /* End of SignUp Page
 
 /*Contact Page */
+
 div#contact-container {
     margin-top: 1.5em;
     text-align: right;
 }
+
 div.text-box1 {
     margin-top: 1.5em;
 }
 /*End of Contact Page */
-
 /* Rollover Share */
 
 .rollover .box-share {
@@ -956,12 +1109,14 @@ div.text-box1 {
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out;
 }
+
 .rollover .box-share li {
     display: inline-block;
     margin: 0 2px;
     width: 42px;
     height: 42px;
 }
+
 .rollover .box-share li span {
     display: block;
     height: 42px;
@@ -971,19 +1126,22 @@ div.text-box1 {
     cursor: pointer;
     opacity: .75;
     overflow: hidden;
-
     -webkit-transition: all .25s ease-out;
     transition: all .25s ease-out;
 }
+
 .rollover:hover {
     background: rgba(72, 164, 171, 0.5);
 }
+
 .rollover .box-share li span:hover {
     opacity: 1;
 }
+
 .rollover .box-share li .twitter {
     background-image: url(../images/twitter.svg);
 }
+
 .rollover .box-share li .facebook {
     background-image: url(../images/facebook.svg);
 }
@@ -1018,6 +1176,20 @@ div.text-box1 {
     opacity: 1;
 }
 
+a.profile-icon {
+    display: flex;
+    align-items: center;
+}
 a.profile-icon img {
     height: 40px;
+}
+div.thankyou h1 {
+    color: #57c6cd;
+    font-size: 2em;
+    text-align: center;
+}
+div.thankyou h2 {
+    color: #414e61;
+    font-size: 1.5em;
+    text-align: center;
 }
