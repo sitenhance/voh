@@ -4,7 +4,8 @@
   "description": "Voice Of Hair repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/sitenhance/voh/issues"
   },
-  "homepage": "https://github.com/sitenhance/voh#readme"
+  "homepage": "https://github.com/sitenhance/voh#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.6.1",
+    "express": "^4.14.0"
+  }
 }

@@ -1,5 +1,5 @@
 (function () {
-    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', function ($scope, $stateParams) {
+    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', function ($scope, $stateParams, $anchorScroll, $location) {
         console.log(stylists);
         //Function to check if $stateParams is empty
         function isEmpty(obj) {
@@ -20,6 +20,15 @@
         }
 
         $scope.stylists = findFeaturedStylists();
+
+        $scope.startedSearch = function(hairstyle) {
+            $scope.stylists = findSpecialties(stylists, hairstyle);
+        };
+
+        $scope.goToStylistHeader = function () {
+            $location.hash('top-header');
+            $anchorScroll();
+        };
 
         //Find Stylists that do certain haircuts
         function findSpecialties(stylistsArg, pickedStyle) {
@@ -61,7 +70,6 @@
                 var stylistsSpecialty = findSpecialties(stylists, hairstyle);
                 $scope.stylists = stylistsSpecialty;
             } else {
-                console.log('Hey');
                 var locationArray = location.split(', ');
                 var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);
                 $scope.stylists = findSpecialties(stylistsInLocation, hairstyle);

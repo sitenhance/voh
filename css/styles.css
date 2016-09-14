@@ -110,6 +110,12 @@ div#nav-columns {
 div#nav-columns > div.column {
     padding-bottom: 0;
 }
+.ng-sticky-fixed{
+top:0;
+left:0;
+position:fixed;
+width:100%;
+}
 /* End of Navigation */
 
 /* Card Component Styles */
@@ -240,6 +246,8 @@ select#home-find-hairstyle {
     background: none;
     border: 0;
     border-bottom: 2px solid #fff;
+    font-size: 24px;
+    padding-right: 40px;
 }
 div#home-hairstyle-dropdown > a {
     margin-top: 2em;
@@ -933,3 +941,79 @@ div.text-box1 {
     margin-top: 1.5em;
 }
 /*End of Contact Page */
+
+/* Rollover Share */
+
+.rollover .box-share {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -21px;
+    text-align: center;
+    z-index: 10;
+    visibility: hidden;
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+.rollover .box-share li {
+    display: inline-block;
+    margin: 0 2px;
+    width: 42px;
+    height: 42px;
+}
+.rollover .box-share li span {
+    display: block;
+    height: 42px;
+    background-size: 100%;
+    text-indent: -23em;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: .75;
+    overflow: hidden;
+
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+.rollover:hover {
+    background: rgba(72, 164, 171, 0.5);
+}
+.rollover .box-share li span:hover {
+    opacity: 1;
+}
+.rollover .box-share li .twitter {
+    background-image: url(../images/twitter.svg);
+}
+.rollover .box-share li .facebook {
+    background-image: url(../images/facebook.svg);
+}
+/*.rollover .box-share li .bt.bt-url {
+    position: static;
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    border: 2px solid #3c948b;
+    border-radius: 50%;
+    opacity: 1;
+}*/
+/*.rollover .box-share li .bt.bt-url:before {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 29px;
+    color: #3c948b;
+
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}*/
+/*.rollover .box-share li .bt.bt-url:hover {
+    border-color: #fff;
+}
+.rollover .box-share li .bt.bt-url:hover:before {
+    color: #fff;
+}*/
+
+.rollover:hover .box-share {
+    visibility: visible;
+    opacity: 1;
+}

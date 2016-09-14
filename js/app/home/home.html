@@ -7,14 +7,16 @@
             <div id="home-hairstyle-dropdown">
                 <p class="control">
                     <span class="select">
-                            <select name="hairstyles" id="home-find-hairstyle">
+                            <select name="hairstyles" ng-model="data.hairstyle" id="home-find-hairstyle" ng-controller="stylistCtrl">
                                 <option value="" selected></option>
-                                <option value="option_2">Option 2</option>
-                                <option value="option_2">Really long option and stuff</option>
+                                    <option value="bobcuts">bobcuts</option>
+                                    <option value="braids">braids</option>
+                                    <option value="bun">bun</option>
+                                    <option value="bunches">bunches</option>
                             </select>
                         </span>
                 </p>
-                <a href="#" class="button action-btn is-medium">Get Started</a>
+                <a href="#" class="button action-btn is-medium" ng-click="startedSearch()" ui-sref="find-stylists">Get Started</a>
             </div>
         </div>
     </div>
