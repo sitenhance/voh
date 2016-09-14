@@ -1017,3 +1017,7 @@ div.text-box1 {
     visibility: visible;
     opacity: 1;
 }
+
+a.profile-icon img {
+    height: 40px;
+}
