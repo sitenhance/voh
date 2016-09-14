@@ -29,6 +29,11 @@ vohApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/blog',
             templateUrl: './js/app/blog/blog.html',
             controller: 'blogCtrl'
+        })
+        .state('register', {
+            url: '/register',
+            templateUrl: './js/app/register/register.html',
+            controller: 'registerCtrl'
         });
 
 
