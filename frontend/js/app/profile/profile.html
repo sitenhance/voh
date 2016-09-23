@@ -1,0 +1,188 @@
+<!-- Featured Stylists Header -->
+<section class="section" id="top-header">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12 has-text-centered">
+                <div id="top-header">
+                    <h1>Profile</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- For Stylists Form -->
+<section class="section" id="fr-stylists-sign-up-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="fr-stylists-form-container">
+                    <div class="fr-stylists-frm">
+                        <p class="control">
+                            <input type="text" placeholder="Name" class="input is-large" ng-model="userData.name" ng-value="userData.name">
+                        </p>
+                        <p class="control">
+                            <input type="email" placeholder="Email" class="input is-large" ng-model="userData.email" ng-value="userData.email">
+                        </p>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <p class="control">
+                                    <input type="text" placeholder="Password" class="input is-large" ng-value="userData.password">
+                                </p>
+                            </div>
+                            <div class="column is-6">
+                                <p class="control">
+                                    <input type="text" placeholder="Confirm Password" class="input is-large" ng-value="userData.passwordConfirm">
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <label for="booking-method">Select Gender</label>
+                        <p class="control">
+                            <div class="columns">
+                                <span class="select is-large">
+                                <select name="licensed" id="licensed-stylist" ng-model="userData.gender">
+                                    <option value="">Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </span>
+                            </div>
+                        </p>
+                        <label for="specialty" class="label">How do you typically do your hair?</label>
+                        <p class="control">
+                            <div class="columns">
+                                <div class="column is-12 signup-section">
+                                    <div class="column is-4 signup-boxes" signup-boxes>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.short">Short Cuts/Pixie Cuts
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.bobcuts">Bobcuts
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.weaves">Weaves/Extensions
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.protective">Protective Styles (Braids, Twists, Faux Locs)
+                                        </label>
+                                    </div>
+                                    <div class="column is-4 signup-boxes">
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.haircolor">Hair Color
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.blowouts">Blow Outs/Thermal Straightening
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.kids">Kids Hairstyles
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.special">BSpecial Occasions/Up Dos
+                                        </label>
+                                    </div>
+                                    <div class="column is-4 signup-boxes">
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.relaxers">Relaxers and Perms
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.hairDo.natural">Natural Hairstyles (Flexi Rod Sets, Perm Rod Sets, Natural Up Dos)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                        <label for="specialty" class="label">What's your biggest challenge as it relates to your hair?</label>
+                        <p class="control">
+                            <div class="columns">
+                                <div class="column is-12 signup-section">
+                                    <div class="column is-4 signup-boxes" signup-boxes>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.challenge.help">Help styling my own hair
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.challenge.someone">Finding someone to style my hair
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.challenege.products">Finding products to help my hair
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.challenge.restoring">Restoring damaged hair
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                        <label for="specialty" class="label">What kind of hairstyles can help you achive?</label>
+                        <p class="control">
+                            <div class="columns">
+                                <div class="column is-12 signup-section">
+                                    <div class="column is-4 signup-boxes" signup-boxes>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.short">Short Cuts/Pixie Cuts
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.bobcuts">Bobcuts
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.weaves">Weaves/Extensions
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.protective">Protective Styles (Braids, Twists, Faux Locs)
+                                        </label>
+                                    </div>
+                                    <div class="column is-4 signup-boxes">
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.haircolor">Hair Color
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.blowouts">Blow Outs/Thermal Straightening
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.kids">Kids Hairstyles
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.special">BSpecial Occasions/Up Dos
+                                        </label>
+                                    </div>
+                                    <div class="column is-4 signup-boxes">
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.relaxers">Relaxers and Perms
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.natural">Natural Hairstyles (Flexi Rod Sets, Perm Rod Sets, Natural Up Dos)
+                                        </label>
+                                        <label class="checkbox fr-stylist-check-radio">
+                                            <input type="checkbox" ng-model="userData.achieve.other">Other
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </p>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <p class="control">
+                                    <input type="text" placeholder="City" class="input is-large" ng-model="userData.city">
+                                </p>
+                            </div>
+                            <div class="column is-6">
+                                <p class="control">
+                                    <input type="text" placeholder="State" class="input is-large" ng-model="userData.state">
+                                </p>
+                            </div>
+                        </div>
+                        <p class="control">
+                            <input type="text" placeholder="Select Country" class="input is-large" ng-model="userData.country">
+                        </p>
+                    </div>
+                    <div id="account-container">
+                        <p class="savedMessage" ng-show="changesSaved">Changes are saved</p>
+                        <a ng-click="saveUserInfo()" class="button account-btn is-large">Save Changes</a>
+                    </div>
+                </div>
+                </di>
+            </div>
+        </div>
+    </div>
+</section>

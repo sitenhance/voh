@@ -1180,6 +1180,10 @@ a.profile-icon {
     display: flex;
     align-items: center;
 }
+a.profile-icon > p {
+    display: block;
+    margin-right: 1.05em;
+}
 a.profile-icon img {
     height: 40px;
 }

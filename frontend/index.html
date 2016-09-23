@@ -13,8 +13,16 @@
 <body>
     <!-- User Account Section -->
     <div class="columns">
-        <div class="column is-2 is-offset-10 account-section">
-            <a href="#" class="button is-outlined action-btn">Sign In</a>
+        <div class="column is-2 is-offset-10 account-section" ng-controller="accountCtrl">
+           <div class="signInBtns" ng-hide="userSignedIn">
+                <a href="#" class="button is-outlined action-btn">Sign In</a>
+                <a ui-sref="register" class="button is-outlined action-btn">Sign Up</a>
+           </div>
+           <div class="userInfoDisplay" ng-show="userSignedIn">
+                <a ui-sref="profile" class="profile-icon"><p>Welcome, {{name}}</p><img src="images/long_hair.png" alt="">
+                </a>
+                <a ng-click="logOutUser()" class="button is-outlined action-btn">Log Out</a>
+           </div>
         </div>
     </div>
 
@@ -95,12 +103,13 @@
             </div>
         </div>
     </div>
-<script src="./js/vendor/jquery-3.0.0.min.js"></script>
-<script src="./js/vendor/angular.min.js"></script>
-<script src="./js/vendor/angular-ui-router.min.js"></script>
-<script src="./js/vendor/lodash.min.js"></script>
-<script src="./js/vendor/stylist.js"></script>
-<script src="./js/vendor/fotorama.js"></script>
+<script src="/js/vendor/jquery-3.0.0.min.js"></script>
+<script src="/js/vendor/angular.min.js"></script>
+<script src="/js/vendor/angular-ui-router.min.js"></script>
+<script src="/js/vendor/lodash.min.js"></script>
+<script src="/js/vendor/stylist.js"></script>
+<script src="/js/vendor/fotorama.js"></script>
+<script src="/js/vendor/satellizer.min.js"></script>
 
 <!-- Vendor JavaScript Libraries -->
 <script src="./js/vendor/ng-sticky.js"></script>
@@ -112,9 +121,15 @@
 <script src="./js/app/stylists/stylist.controller.js"></script>
 <script src="./js/app/blog/blog.controller.js"></script>
 <script src="./js/app/register/register.controller.js"></script>
+<script src="./js/app/thanks/thanks.controller.js"></script>
+<script src="./js/app/profile/profile.controller.js"></script>
+<script src="./js/app/profile/account.controller.js"></script>
 
 <!-- Services -->
 <script src="./js/app/services/users.service.js"></script>
+<script src="./js/app/services/authtoken.js"></script>
+<script src="./js/app/services/authinterceptor.js"></script>
+<script src="./js/app/services/auth.js"></script>
 
 </body>
 </html>

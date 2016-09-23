@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/Halbert/Documents/Voice Of Hair/site/server.js",
+        "C:/Users/Halbert/Documents/Voice Of Hair/site/js/vendor/stylist.js",
+        "C:/Users/Halbert/Documents/Voice Of Hair/site/js/vendor/ng-sticky.js",
+        "C:/Users/Halbert/Documents/Voice Of Hair/site/js/vendor/lodash.min.js"
+    ]
+}
