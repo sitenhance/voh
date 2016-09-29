@@ -1,0 +1,40 @@
+<!-- Featured Stylists Header -->
+<section class="section" id="top-header">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12 has-text-centered">
+                <div id="top-header">
+                    <h1>Hairspiration Gallery</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="fr-stylists-sign-up-section">
+    <p class="control">
+        <span class="select">
+                            <select name="gallery-hairstyle" id="gallery-hairstyle">
+                                <option value="">Choose A Hairstyle</option>
+                                <option value="hairstyle-one">Hairstyle One</option>
+                            </select>
+                        </span>
+    </p>
+</section>
+<section class="section" id="fr-stylists-sign-up-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="fr-stylists-form-container">
+                    <ul class="gallery gallery1" ng-controller="GalleryCtrl">
+                        <li ng-repeat="image in images">
+                            <a ng-click="openLightboxModal($index)">
+                                <img ng-src="{{image.thumbUrl}}" class="img-thumbnail">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

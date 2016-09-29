@@ -45,6 +45,11 @@ vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpP
             templateUrl: './js/app/thanks/thanks.html',
             controller: 'thanksCtrl'
         })
+        .state('gallery', {
+            url: '/gallery',
+            templateUrl: './js/app/gallery/gallery.html',
+            controller: 'galleryCtrl'
+        })
     
 
         $authProvider.loginUrl = API_URL + 'login';
