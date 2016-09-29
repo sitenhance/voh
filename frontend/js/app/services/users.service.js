@@ -1,5 +1,5 @@
 (function() {
-    vohApp.factory('usersService', [ '$rootScope', function($rootScope) {
+    vohApp.factory('usersService', [ '$rootScope', '$auth', function($rootScope, $auth) {
         
         var usersService = {};
         
@@ -51,6 +51,27 @@
             usersService.password = password;
             usersService.signedIn = true;
             usersService.broadcastUserSignUp();
+        };
+
+        usersService.loggedIn = $auth.isAuthenticated();
+
+        usersService.userAuthenticated = function(authStatus, userID) {
+            usersService.loggedIn = authStatus;
+            usersService.setUserID(userID);
+            usersService.broadcastAuth();
+        };
+
+        usersService.logOutUser = function(authStatus) {
+            usersService.loggedIn = !authStatus;
+            usersService.broadcastAuth();
+        };
+
+        usersService.setUserID = function(name) {
+            usersService.name = name;
+        };
+
+        usersService.broadcastAuth = function() {
+            $rootScope.$broadcast('userAuthentication');
         };
         
         usersService.savedInfo = function(data) {

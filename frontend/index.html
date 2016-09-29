@@ -14,12 +14,12 @@
     <!-- User Account Section -->
     <div class="columns">
         <div class="column is-2 is-offset-10 account-section" ng-controller="accountCtrl">
-           <div class="signInBtns" ng-hide="userSignedIn">
-                <a href="#" class="button is-outlined action-btn">Sign In</a>
+           <div class="signInBtns" ng-hide="loggedIn">
+                <a ui-sref="login" class="button is-outlined action-btn">Sign In</a>
                 <a ui-sref="register" class="button is-outlined action-btn">Sign Up</a>
            </div>
-           <div class="userInfoDisplay" ng-show="userSignedIn">
-                <a ui-sref="profile" class="profile-icon"><p>Welcome, {{name}}</p><img src="images/long_hair.png" alt="">
+           <div class="userInfoDisplay" ng-show="loggedIn">
+                <a ui-sref="profile" class="profile-icon"><p>Welcome, {{name}}</p>
                 </a>
                 <a ng-click="logOutUser()" class="button is-outlined action-btn">Log Out</a>
            </div>
@@ -123,6 +123,7 @@
 <script src="./js/app/thanks/thanks.controller.js"></script>
 <script src="./js/app/profile/profile.controller.js"></script>
 <script src="./js/app/profile/account.controller.js"></script>
+<script src="./js/app/login/login.controller.js"></script>
 
 <!-- Services -->
 <script src="./js/app/services/users.service.js"></script>

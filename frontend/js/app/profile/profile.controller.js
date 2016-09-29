@@ -39,7 +39,7 @@
         
         $scope.saveUserInfo = function() {
             usersService.savedInfo($scope.userData);
-        }
+        };
         
     }])
 }());

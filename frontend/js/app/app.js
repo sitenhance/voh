@@ -38,13 +38,26 @@ vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpP
         .state('profile', {
             url: '/profile',
             templateUrl: './js/app/profile/profile.html',
-            controller: 'profileCtrl'
+            controller: 'profileCtrl',
+            data: {requiredLogin: true}
         })
         .state('thanks', {
             url: '/thanks',
             templateUrl: './js/app/thanks/thanks.html',
             controller: 'thanksCtrl'
         })
+        .state('login', {
+            url: '/login',
+            templateUrl: './js/app/login/login.html',
+            controller: 'loginCtrl'
+        });
+
+        $authProvider.facebook({
+            clientId: '1076459415795318',
+            url: API_URL + 'facebook',
+            redirectUri: window.location.origin + '/',
+            oauthType: '2.0'
+        });
     
 
         $authProvider.loginUrl = API_URL + 'login';
@@ -54,4 +67,19 @@ vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpP
 
 
 })
-.constant('API_URL', 'http://localhost:9000/');
+.constant('API_URL', 'http://localhost:9000/')
+.run(function($rootScope, $auth, $state) {
+    $rootScope.$on('$stateChangeStart', function(event, toState) {
+        var requiredLogin = false;
+        
+        if(toState.data && toState.data.requiredLogin) {
+            requiredLogin = true;
+        }
+        
+        if(requiredLogin && !$auth.isAuthenticated()) {
+            event.preventDefault();
+            $state.go('login');
+        }
+        
+    });
+});

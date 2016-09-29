@@ -1,21 +1,20 @@
 (function() {
-    vohApp.controller('accountCtrl', [ '$scope', 'usersService', '$state', function($scope, usersService, $state) {
-        $scope.userSignedIn = usersService.signedIn;
-        $scope.name = usersService.name;
+    vohApp.controller('accountCtrl', [ '$scope', 'usersService', '$state', '$auth', function($scope, usersService, $state, $auth) {
         
-        $scope.$on('handleSignUp', function() {
-            $scope.userSignedIn = usersService.signedIn;
+        $scope.loggedIn = usersService.loggedIn;
+
+        console.log($auth.isAuthenticated());
+
+        $scope.$on( 'userAuthentication', function() {
+            $scope.loggedIn = usersService.loggedIn;
             $scope.name = usersService.name;
         });
-        
-        $scope.$on('loggedUserOut', function() {
-            $scope.userSignedIn = usersService.signedIn;
-        });
-        
+
         $scope.logOutUser = function() {
-            usersService.loggingOut();
+            $auth.logout();
+            usersService.userAuthenticated($auth.isAuthenticated(), '');
             $state.go('home');
-        }
-        
+        };
+
     }]);
 }());

@@ -8,7 +8,7 @@ vohApp.service('auth', function($http, API_URL, authToken, $state, $window) {
     
     function authSuccessful(res) {
         authToken.setToken(res.token);
-        $state.go('main');
+        $state.go('home');
     }
     
 });
