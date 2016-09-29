@@ -46,6 +46,7 @@ vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpP
             templateUrl: './js/app/thanks/thanks.html',
             controller: 'thanksCtrl'
         })
+<<<<<<< HEAD
         .state('login', {
             url: '/login',
             templateUrl: './js/app/login/login.html',
@@ -58,6 +59,13 @@ vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpP
             redirectUri: window.location.origin + '/',
             oauthType: '2.0'
         });
+=======
+        .state('gallery', {
+            url: '/gallery',
+            templateUrl: './js/app/gallery/gallery.html',
+            controller: 'galleryCtrl'
+        })
+>>>>>>> c4f56a48b4a1475a784e112abfa3ed0b213afccf
     
 
         $authProvider.loginUrl = API_URL + 'login';
