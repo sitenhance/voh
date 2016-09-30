@@ -14,11 +14,11 @@
 <section class="section" id="fr-stylists-sign-up-section">
     <p class="control">
         <span class="select">
-                            <select name="gallery-hairstyle" id="gallery-hairstyle">
-                                <option value="">Choose A Hairstyle</option>
-                                <option value="hairstyle-one">Hairstyle One</option>
-                            </select>
-                        </span>
+            <select name="gallery-hairstyle" id="gallery-hairstyle">
+                <option value="">Choose A Hairstyle</option>
+                <option value="hairstyle-one">Hairstyle One</option>
+            </select>
+        </span>
     </p>
 </section>
 <section class="section" id="fr-stylists-sign-up-section">
@@ -26,7 +26,7 @@
         <div class="columns">
             <div class="column is-12">
                 <div class="fr-stylists-form-container">
-                    <ul class="gallery gallery1" ng-controller="GalleryCtrl">
+                    <ul class="gallery gallery1">
                         <li ng-repeat="image in images">
                             <a ng-click="openLightboxModal($index)">
                                 <img ng-src="{{image.thumbUrl}}" class="img-thumbnail">

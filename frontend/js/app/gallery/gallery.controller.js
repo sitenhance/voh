@@ -2,17 +2,44 @@
     vohApp.controller('galleryCtrl', ['$scope', 'Lightbox', function ($scope, Lightbox) {
         $scope.images = [
             {
-                'url': '1.jpg',
-                'caption': 'Optional caption',
-                'thumbUrl': 'thumb1.jpg' // used only for this example
+                'url': '../../../images/gallery-one-lg.jpg',
+                'thumbUrl': '../../../images/gallery-one-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
             },
             {
-                'url': '2.gif',
-                'thumbUrl': 'thumb2.jpg'
+                'url': '../../../images/gallery-two-lg.jpg',
+                'thumbUrl': '../../../images/gallery-two-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
             },
             {
-                'url': '3.png',
-                'thumbUrl': 'thumb3.png'
+                'url': '../../../images/gallery-three-lg.jpg',
+                'thumbUrl': '../../../images/gallery-three-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
+            },
+            {
+                'url': '../../../images/gallery-four-lg.jpg',
+                'thumbUrl': '../../../images/gallery-four-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
+            },
+            {
+                'url': '../../../images/gallery-five-lg.jpg',
+                'thumbUrl': '../../../images/gallery-five-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
+            },
+            {
+                'url': '../../../images/gallery-six-lg.jpg',
+                'thumbUrl': '../../../images/gallery-six-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
+            },
+            {
+                'url': '../../../images/gallery-seven-lg.jpg',
+                'thumbUrl': '../../../images/gallery-seven-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
+            },
+            {
+                'url': '../../../images/gallery-eight-lg.jpg',
+                'thumbUrl': '../../../images/gallery-eight-sm.jpg',
+                'caption': 'This is just a basic description of this lovely image.'
             }
         ];
 

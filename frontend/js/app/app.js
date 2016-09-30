@@ -1,4 +1,4 @@
-var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer']);
+var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox']);
 
 vohApp.config(function($locationProvider) {
     // $locationProvider.html5Mode(true);
