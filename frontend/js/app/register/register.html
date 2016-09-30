@@ -8,45 +8,41 @@
                         <h1>Sign Up To Be A Member of Voice of Hair</h1>
                         <h2>You get access to all articles, expert videos, and Featured Stylists in your area.</h2>
                     </div>
+                    <div class="columns" ng-show="userExists">
+                        <div class="column is-12">
+                            <article class="message is-danger">
+                                <div class="message-header">
+                                    We encoutered an error
+                                </div>
+                                <div class="message-body">
+                                    Email already exists!
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                     <div class="fr-stylists-frm">
-                        <div class="columns" ng-show="userExists">
-                            <div class="column is-12">
-                                <article class="message is-danger">
-                                    <div class="message-header">
-                                        We encoutered an error
-                                    </div>
-                                    <div class="message-body">
-                                        Email already exists!
-                                    </div>
-                                </article>
-                            </div>
+                        <div class="register-email">
+                            <p class="control">
+                                <input type="email" placeholder="Email" class="input is-large" ng-model="data.email">
+                            </p>
                         </div>
-                        <div class="columns">
-                            <div class="column is-12">
-                                <p class="control">
-                                    <input type="email" placeholder="Email" class="input is-large" ng-model="data.email">
-                                </p>
-                            </div>
+                        <div class="register-password">
+                            <p class="control">
+                                <input type="password" placeholder="Password" class="input is-large" ng-model="data.password">
+                            </p>
                         </div>
-                        <div class="columns">
-                            <div class="column is-6">
-                                <p class="control">
-                                    <input type="password" placeholder="Password" class="input is-large" ng-model="data.password">
-                                </p>
-                            </div>
-                            <div class="column is-6">
-                                <p class="control">
-                                    <input type="password" placeholder="Confirm Password" class="input is-large">
-                                </p>
-                            </div>
+                        <div class="register-confirm-password">
+                            <p class="control">
+                                <input type="password" placeholder="Confirm Password" class="input is-large">
+                            </p>
                         </div>
                         <hr>
                         <label class="checkbox signup-check-radio">
                             <input type="checkbox" value="natural">I agree to the terms of use and privacy
                         </label>
-                    </div>
-                    <div id="account-container">
-                        <a class="button account-btn is-large" ng-click="submitUser()">Create Account</a>
+                        <div id="sign-in-btn-container">
+                            <a class="button action-btn is-large" ng-click="submitUser()">Create Account</a>
+                        </div>
                     </div>
                 </div>
             </div>

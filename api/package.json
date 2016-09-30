@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "q": "^1.4.1"
+    "passport-facebook": "^2.1.1",
+    "q": "^1.4.1",
+    "querystring": "^0.2.0"
   }
 }

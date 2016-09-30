@@ -1,6 +1,6 @@
 (function () {
-    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', function ($scope, $stateParams, $anchorScroll, $location) {
-        console.log(stylists);
+    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', 'usersService', function ($scope, $stateParams, $anchorScroll, $location, usersService) {
+
         //Function to check if $stateParams is empty
         function isEmpty(obj) {
             for (var prop in obj) {
@@ -112,6 +112,15 @@
                     $scope.stylist = item;
                 }
             }).value();
+
+            $scope.registered = usersService.loggedIn;
+
+            $scope.$on('userAuthentication', function() {
+                $scope.registered = usersService.loggedIn;
+            });
+
+            
+
         }
 
     }]);

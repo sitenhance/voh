@@ -76,7 +76,7 @@
 </section>
 
 <!-- Contact Info -->
-<section class="section" id="stylist-contact-section">
+<section class="section" id="stylist-contact-section" ng-show="registered">
     <div class="container">
         <div class="columns">
             <div class="column is-two-thirds">
@@ -117,7 +117,7 @@
     </div>
 </section>
 
-<section class="section" id="social-salon-info-section">
+<section class="section" id="social-salon-info-section" ng-show="registered">
     <div class="container">
         <div class="columns">
             <div class="column is-half">
@@ -143,6 +143,21 @@
             <div class="column is-half">
                 <div class="google-map">
                     <p>Google Map Code Goes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="non-registered-user-message-section" ng-hide="registered">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="sign-up-message-box">
+                    <p class="has-text-centered stylist-register-text">
+                        Please Register To Have Full Access To Stylist Content
+                    </p>
+                    <button class="button action-btn" ui-sref="register">Register</button>
                 </div>
             </div>
         </div>

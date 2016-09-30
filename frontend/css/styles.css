@@ -32,6 +32,10 @@ body {
     color: #fff;
 }
 
+.action-btn:focus {
+    color: #fff;
+}
+
 .read-more-btn {
     background-color: #57c6cd;
     color: #fff;
@@ -93,6 +97,16 @@ body {
 .account-section {
     margin-top: 1em;
 }
+
+div.signInBtns {
+    margin-right: 1em;
+}
+
+div.userInfoDisplay {
+    display: flex;
+    flex-direction: row;
+}
+
 /* End of Account/Sign In/Shopping */
 /* Navigation Component Styles */
 
@@ -389,6 +403,17 @@ div.salon-name > p {
 div.salon-address > p {
     font-size: 1.5em;
     color: #414e61;
+}
+
+div.sign-up-message-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.stylist-register-text {
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
 /* Single Blog Post Styles */
 
@@ -1017,12 +1042,12 @@ div.sb-scl-icons {
 div.sb-scl-icons > a:not(:last-child) {
     margin-right: 1em;
 }
-/* Signup  */
+/* Signup And Login  */
 
 div.fr-stylists-frm > label,
 div.fr-stylists-frm > p.control > label {
     font-size: 1.5em;
-    margin: 1em 0;
+    margin: 0 0 1em;
 }
 
 div.fr-stylists-form-container {
@@ -1032,6 +1057,7 @@ div.fr-stylists-form-container {
 
 div.fr-stylists-frm-intro {
     margin-bottom: 2em;
+    text-align: center;
 }
 
 div.fr-stylists-frm-intro h1 {
@@ -1082,7 +1108,40 @@ label.signup-check-radio > input {
 label.signup-check-radio > input {
     margin-right: .5em;
 }
-/* End of SignUp Page
+/* End of SignUp Page */
+
+/* Login Styles */
+
+div.fr-stylists-frm {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+div.fr-stylists-frm hr {
+    width: 100%;
+}
+
+button.facebook-btn {
+    color: #fff;
+    background-color: #3B5998;
+    align-self: stretch;
+}
+button.facebook-btn:hover {
+    color: #fff;
+    background-color: #23365f;
+}
+
+div.login-email, div.login-password, div#sign-in-btn-container, div.register-email, div.register-password, div.register-confirm-password {
+    align-self: stretch;
+    margin-bottom: 1em;
+}
+
+div#sign-in-btn-container a.button {
+    width: 100%;
+}
 
 /*Contact Page */
 

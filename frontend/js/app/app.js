@@ -1,11 +1,11 @@
-var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer']);
+var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox']);
 
-vohApp.config(function($locationProvider) {
+vohApp.config(function ($locationProvider) {
     // $locationProvider.html5Mode(true);
 });
 
 //Application Routing
-vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL) {
+vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL) {
 
     //Default to home page
     $urlRouterProvider.otherwise('/');
@@ -39,55 +39,50 @@ vohApp.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpP
             url: '/profile',
             templateUrl: './js/app/profile/profile.html',
             controller: 'profileCtrl',
-            data: {requiredLogin: true}
+            data: { requiredLogin: true }
         })
         .state('thanks', {
             url: '/thanks',
             templateUrl: './js/app/thanks/thanks.html',
             controller: 'thanksCtrl'
         })
-<<<<<<< HEAD
         .state('login', {
             url: '/login',
             templateUrl: './js/app/login/login.html',
             controller: 'loginCtrl'
-        });
-
-        $authProvider.facebook({
-            clientId: '1076459415795318',
-            url: API_URL + 'facebook',
-            redirectUri: window.location.origin + '/',
-            oauthType: '2.0'
-        });
-=======
+        })
         .state('gallery', {
             url: '/gallery',
             templateUrl: './js/app/gallery/gallery.html',
             controller: 'galleryCtrl'
-        })
->>>>>>> c4f56a48b4a1475a784e112abfa3ed0b213afccf
-    
+        });
 
-        $authProvider.loginUrl = API_URL + 'login';
-        $authProvider.signupUrl = API_URL + 'register';
-    
-        $httpProvider.interceptors.push('authInterceptor');
+    $authProvider.facebook({
+        clientId: '1076459415795318',
+        url: API_URL + 'facebook',
+        redirectUri: window.location.origin + '/'
+    });
+
+    $authProvider.loginUrl = API_URL + 'login';
+    $authProvider.signupUrl = API_URL + 'register';
+
+    $httpProvider.interceptors.push('authInterceptor');
 
 
 })
-.constant('API_URL', 'http://localhost:9000/')
-.run(function($rootScope, $auth, $state) {
-    $rootScope.$on('$stateChangeStart', function(event, toState) {
-        var requiredLogin = false;
-        
-        if(toState.data && toState.data.requiredLogin) {
-            requiredLogin = true;
-        }
-        
-        if(requiredLogin && !$auth.isAuthenticated()) {
-            event.preventDefault();
-            $state.go('login');
-        }
-        
+    .constant('API_URL', 'http://localhost:9000/')
+    .run(function ($rootScope, $auth, $state) {
+        $rootScope.$on('$stateChangeStart', function (event, toState) {
+            var requiredLogin = false;
+
+            if (toState.data && toState.data.requiredLogin) {
+                requiredLogin = true;
+            }
+
+            if (requiredLogin && !$auth.isAuthenticated()) {
+                event.preventDefault();
+                $state.go('login');
+            }
+
+        });
     });
-});

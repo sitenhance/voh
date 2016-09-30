@@ -5,44 +5,47 @@
             <div class="column is-12">
                 <div class="fr-stylists-form-container">
                     <div class="fr-stylists-frm-intro">
-                        <h1>Sign Up To Be A Member of Voice of Hair</h1>
+                        <h1>Log In To Voice of Hair</h1>
                         <h2>You get access to all articles, expert videos, and Featured Stylists in your area.</h2>
                     </div>
-                    <div class="fr-stylists-frm">
-                        <div class="columns" ng-show="error">
-                            <div class="column is-12">
-                                <article class="message is-danger">
-                                    <div class="message-header">
-                                        We encoutered an error
-                                    </div>
-                                    <div class="message-body">
-                                        Wrong Email/Password Try Again!
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="column is-12">
-                                <button ng-click="authenticate('facebook')">Sign In With Facebook</button>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="column is-12">
-                                <p class="control">
-                                    <input type="email" placeholder="Email" class="input is-large" ng-model="formData.email">
-                                </p>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="column is-12">
-                                <p class="control">
-                                    <input type="password" placeholder="Password" class="input is-large" ng-model="formData.password">
-                                </p>
-                            </div>
+                    <div class="columns" ng-show="error">
+                        <div class="column is-12">
+                            <article class="message is-danger">
+                                <div class="message-header">
+                                    We encoutered an error
+                                </div>
+                                <div class="message-body">
+                                    Wrong Email/Password Try Again!
+                                </div>
+                            </article>
                         </div>
                     </div>
-                    <div id="account-container">
-                        <a class="button account-btn is-large" ng-click="submit(formData)">Sign In</a>
+                    <div class="fr-stylists-frm">
+                        <button ng-click="authenticate('facebook')" class="button is-large facebook-btn">
+                            <span class="icon is-medium">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                            <span>Sign In With Facebook</span>
+                        </button>
+                        <hr>
+                        <div class="login-email">
+                            <p class="control has-icon">
+                                <input type="email" placeholder="Email" class="input is-large" ng-model="formData.email">
+                                <i class="fa fa-envelope"></i>
+                            </p>
+                        </div>
+                        <div class="login-password">
+                            <p class="control has-icon">
+                                <input type="password" placeholder="Password" class="input is-large" ng-model="formData.password">
+                                <i class="fa fa-lock"></i>
+                            </p>
+                        </div>
+                        <div id="sign-in-btn-container">
+                            <a class="button action-btn is-large" ng-click="submit(formData)">Sign In</a>
+                        </div>
+                        <div class="register-user-container">
+                            <a ui-sref="register">Need A Account?&nbsp;&nbsp;Click Here To Register!</a>
+                        </div>
                     </div>
                 </div>
             </div>
