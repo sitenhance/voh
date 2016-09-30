@@ -3,6 +3,8 @@
         
         $scope.loggedIn = usersService.loggedIn;
 
+        $scope.name = usersService.name;
+
         console.log($auth.isAuthenticated());
 
         $scope.$on( 'userAuthentication', function() {
