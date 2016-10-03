@@ -85,8 +85,32 @@ body {
 /* End of Button */
 
 /* Loaders */
-.ball-beat {
-    background: purple;
+div.load-view {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 360px;
+}
+div.profile-loader {
+    margin-bottom: 2em;
+}
+.ball-beat > div {
+    background: #d51546;
+    height: 30px;
+    width: 30px;
+}
+
+div.loading-message p {
+    font-size: 2em;
 }
 
 /* Social Icon Styles */
@@ -152,6 +176,7 @@ div#nav-columns > div.column {
     position: fixed;
     width: 100%;
 }
+
 /* End of Navigation */
 /* Card Component Styles */
 
