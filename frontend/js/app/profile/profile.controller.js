@@ -2,11 +2,17 @@
     vohApp.controller('profileCtrl', [ '$scope', 'usersService', '$http', 'API_URL', '$localStorage', function($scope, usersService, $http, API_URL, $localStorage) {
         
         $scope.userData = {};
-        
-        $scope.changesSaved = false;
-        $scope.savePending = 
+
+        $scope.updateSuccessful = false;
+        $scope.savePending = false;
+        $scope.requestDone = false;
+        $scope.profileLoading = usersService.profileLoading;
 
         usersService.getUserInfo();
+
+        $scope.$on('profileLoading', function() {
+            $scope.profileLoading = usersService.profileLoading;
+        });
         
         $scope.userData.firstName = usersService.firstName;
         $scope.userData.lastName = usersService.lastName;
@@ -52,9 +58,19 @@
                 url: API_URL + 'profile',
                 data: data
             }).then(function(res) {
-                $scope.changesSaved = true;
+                $scope.requestDone = true;
+                $scope.updateHeader = 'Hooray!';
+                $scope.updateBody = 'We have successfully updated your profile changes!';
+                $scope.updateSuccessful = true;
+                $scope.successfulSave = true;
+                $scope.savePending = false;
             }, function(err) {
-
+                $scope.requestDone = true;
+                $scope.updateHeader = 'Oh no!';
+                $scope.updateBody = 'We encountered a problem saving your changes, please try again.';
+                $scope.successfulSave = false;
+                $scope.updateSuccessful = false;
+                $scope.savePending = false;
             });
             console.log($scope.userData);
             usersService.savedInfo($scope.userData);

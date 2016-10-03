@@ -83,6 +83,12 @@ body {
     color: #fff;
 }
 /* End of Button */
+
+/* Loaders */
+.ball-beat {
+    background: purple;
+}
+
 /* Social Icon Styles */
 
 .social-icon {

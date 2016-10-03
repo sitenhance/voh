@@ -24,6 +24,8 @@
         usersService.state = '';
         
         usersService.country = '';
+
+        usersService.profileLoading = true;
         
         usersService.signedIn = false;
         
@@ -69,6 +71,10 @@
             $rootScope.$broadcast('userAuthentication');
         };
 
+        usersService.broadcastProfileLoading = function() {
+            $rootScope.$broadcast('profileLoading');
+        }
+
         usersService.getUserInfo = function() {
             $http({
                 method: 'GET',
@@ -76,6 +82,8 @@
                 params: { email: $localStorage.name }
             }).then(function(res){
                 usersService.savedInfo(res.data);
+                usersService.profileLoading = false;
+                usersService.broadcastProfileLoading();
             });
         };
         
