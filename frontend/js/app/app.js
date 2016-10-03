@@ -55,6 +55,16 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
             url: '/gallery',
             templateUrl: './js/app/gallery/gallery.html',
             controller: 'galleryCtrl'
+        })
+        .state('about', {
+            url: '/about',
+            templateUrl: './js/app/about/about.html',
+            controller: 'aboutCtrl'
+        })
+        .state('courses', {
+            url: '/courses',
+            templateUrl: './js/app/courses/courses.html',
+            controller: 'coursesCtrl'
         });
 
     $authProvider.facebook({
