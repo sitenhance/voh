@@ -25,7 +25,7 @@
                     </span>
                 </a>
            </div>
-           <div class="userInfoDisplay" ng-show="loggedIn" ng-cloak>
+           <div class="userInfoDisplay is-pulled-right" ng-show="loggedIn" ng-cloak>
                 <a ui-sref="profile" class="profile-icon"><p>Welcome, {{name}}</p>
                 </a>
                 <a ng-click="logOutUser()" class="button is-outlined action-btn">Log Out</a>
@@ -120,6 +120,7 @@
 <script src="/js/vendor/satellizer.min.js"></script>
 <script src="/js/vendor/ui-bootstrap-tpls-2.1.4.min.js"></script>
 <script src="/js/vendor/angular-bootstrap-lightbox.js"></script>
+<script src="/js/vendor/ngStorage.min.js"></script>
 
 <!-- Vendor JavaScript Libraries -->
 <script src="./js/vendor/ng-sticky.js"></script>

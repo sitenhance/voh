@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="fr-stylists-frm">
-                        <button ng-click="authenticate('facebook')" class="button is-large facebook-btn">
+                        <button ng-click="authenticate('facebook')" class="button is-large facebook-btn" ng-class="{'is-loading': loading}">
                             <span class="icon is-medium">
                                 <i class="fa fa-facebook"></i>
                             </span>

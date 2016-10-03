@@ -105,6 +105,7 @@ div.signInBtns {
 div.userInfoDisplay {
     display: flex;
     flex-direction: row;
+    margin-right: 1em;
 }
 
 /* End of Account/Sign In/Shopping */
@@ -1287,3 +1288,5 @@ div.thankyou h2 {
 .gallery5 img {
   width: 120px;
 }
+
+/* Profile Page */

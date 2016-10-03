@@ -1,22 +1,24 @@
 (function() {
-    vohApp.controller('accountCtrl', [ '$scope', 'usersService', '$state', '$auth', function($scope, usersService, $state, $auth) {
+    vohApp.controller('accountCtrl', [ '$scope', 'usersService', '$state', '$auth', '$localStorage', function($scope, usersService, $state, $auth, $localStorage) {
         
         $scope.loggedIn = usersService.loggedIn;
 
-        $scope.name = usersService.name;
+        $scope.storage = $localStorage;
 
-        console.log($auth.isAuthenticated());
+        if ($scope.storage.name !== undefined && $scope.storage.name !== '') {
+            $scope.name = $localStorage.name;
+        }
 
         $scope.$on( 'userAuthentication', function() {
             $scope.loggedIn = usersService.loggedIn;
-            $scope.name = usersService.name;
+            $scope.name = $localStorage.name;
         });
 
         $scope.logOutUser = function() {
             $auth.logout();
+            localStorage.removeItem('ngStorage-name');
             usersService.userAuthenticated($auth.isAuthenticated(), '');
             $state.go('home');
         };
-
     }]);
 }());

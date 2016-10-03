@@ -1,5 +1,5 @@
 (function() {
-    vohApp.factory('usersService', [ '$rootScope', '$auth', function($rootScope, $auth) {
+    vohApp.factory('usersService', [ '$rootScope', '$auth', '$localStorage', '$window', '$http', 'API_URL', function($rootScope, $auth, $localStorage, $window, $http, API_URL) {
         
         var usersService = {};
         
@@ -15,9 +15,9 @@
         
         usersService.hairDo = {};
         
-        usersService.challenge = {};
+        usersService.hairChallenge = {};
         
-        usersService.achieve = {};
+        usersService.hairAchieve = {};
         
         usersService.city = '';
         
@@ -61,31 +61,34 @@
             usersService.broadcastAuth();
         };
 
-        usersService.logOutUser = function(authStatus) {
-            usersService.loggedIn = !authStatus;
-            usersService.broadcastAuth();
-        };
-
         usersService.setUserID = function(name) {
-            usersService.name = name;
+            $localStorage.name = name;
         };
 
         usersService.broadcastAuth = function() {
             $rootScope.$broadcast('userAuthentication');
         };
+
+        usersService.getUserInfo = function() {
+            $http({
+                method: 'GET',
+                url: API_URL + 'profile',
+                params: { email: $localStorage.name }
+            }).then(function(res){
+                usersService.savedInfo(res.data);
+            });
+        };
         
         usersService.savedInfo = function(data) {
-            if(data.name) {
-                usersService.name = data.name;
+            console.log(data);
+            if(data.firstName) {
+                usersService.firstName = data.firstName;
+            }
+            if (data.lastName) {
+                usersService.lastName = data.lastName;
             }
             if(data.email) {
                 usersService.email = data.email;
-            }
-            if(data.password) {
-                usersService.password = data.password;
-            }
-            if(data.passwordConfirm) {
-                usersService.passwordConfirm = data.passwordConfirm;
             }
             if(data.gender) {
                 usersService.gender = data.gender;
@@ -93,11 +96,11 @@
             if(data.hairDo) {
                 usersService.hairDo = data.hairDo;
             }
-            if(data.challenge) {
-                usersService.challenge = data.challenge;
+            if(data.hairChallenge) {
+                usersService.hairChallenge = data.hairChallenge;
             }
-            if(data.achieve) {
-                usersService.achieve = data.achieve;
+            if(data.hairAchieve) {
+                usersService.hairAchieve = data.hairAchieve;
             }
             if(data.city) {
                 usersService.city = data.city;
@@ -109,7 +112,7 @@
                 usersService.country = data.country;
             }
             usersService.updatedProfile();
-        }
+        };
         
         return usersService;
         
