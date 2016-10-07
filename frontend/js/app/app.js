@@ -70,6 +70,11 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
             url: '/for-stylists',
             templateUrl: './js/app/for-stylists/for-stylists.html',
             controller: 'forStylistsCtrl'
+        })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: './js/app/contact/contact.html',
+            controller: 'contactCtrl'
         });
 
     $authProvider.facebook({
