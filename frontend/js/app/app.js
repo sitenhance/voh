@@ -65,6 +65,11 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
             url: '/courses',
             templateUrl: './js/app/courses/courses.html',
             controller: 'coursesCtrl'
+        })
+        .state('for-stylists', {
+            url: '/for-stylists',
+            templateUrl: './js/app/for-stylists/for-stylists.html',
+            controller: 'forStylistsCtrl'
         });
 
     $authProvider.facebook({
