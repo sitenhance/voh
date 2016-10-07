@@ -349,40 +349,40 @@ img.input-scl-icon {
 }
 /* For Stylists */
 
-div.fr-stylists-frm > label,
-div.fr-stylists-frm > p.control > label {
+div.for-stylists-frm > label,
+div.for-stylists-frm > p.control > label {
     font-size: 1.5em;
     margin: 1em 0;
 }
 
-div.fr-stylists-form-container {
+div.for-stylists-form-container {
     display: flex;
     flex-direction: column;
 }
 
-div.fr-stylists-frm-intro {
+div.for-stylists-frm-intro {
     margin-bottom: 2em;
 }
 
-div.fr-stylists-frm-intro h1 {
+div.for-stylists-frm-intro h1 {
     color: #57c6cd;
     font-size: 2em;
 }
 
-div.fr-stylists-frm-intro h2 {
+div.for-stylists-frm-intro h2 {
     color: #414e61;
     font-size: 1.5em;
 }
 
-label.fr-stylist-check-radio > input {
+label.for-stylist-check-radio > input {
     margin-left: 1em;
 }
 
-label.fr-stylist-check-radio > input {
+label.for-stylist-check-radio > input {
     margin-right: .5em;
 }
 
-div.fr-stylists-form-container > div#load-more-container {
+div.for-stylists-form-container > div#load-more-container {
     align-self: center;
 }
 /* Stylist Styles */
