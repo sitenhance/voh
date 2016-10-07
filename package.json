@@ -1,37 +1,40 @@
 {
-    "name": "site",
-    "version": "1.0.0",
-    "description": "Voice Of Hair repo",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/sitenhance/voh.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/sitenhance/voh/issues"
-    },
-    "homepage": "https://github.com/sitenhance/voh#readme",
-    "devDependencies": {
-        "aws-sdk": "^2.6.1",
-        "express": "^4.14.0",
-        "async": "^1.4.2",
-        "bcryptjs": "^2.1.0",
-        "body-parser": "^1.12.3",
-        "dotenv": "^1.2.0",
-        "https-proxy-agent": "^1.0.0",
-        "js-sha256": "^0.3.0",
-        "jwt-simple": "^0.3.0",
-        "lodash": "^3.10.1",
-        "log4js": "^0.6.27",
-        "moment": "^2.10.2",
-        "randomstring": "^1.0.6",
-        "request": "^2.55.0",
-        "string-format": "^0.5.0"
-    }
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Voice Of Hair repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitenhance/voh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sitenhance/voh/issues"
+  },
+  "homepage": "https://github.com/sitenhance/voh#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.6.1",
+    "express": "^4.14.0",
+    "async": "^1.4.2",
+    "bcryptjs": "^2.1.0",
+    "body-parser": "^1.12.3",
+    "dotenv": "^1.2.0",
+    "https-proxy-agent": "^1.0.0",
+    "js-sha256": "^0.3.0",
+    "jwt-simple": "^0.3.0",
+    "lodash": "^3.10.1",
+    "log4js": "^0.6.27",
+    "moment": "^2.10.2",
+    "randomstring": "^1.0.6",
+    "request": "^2.55.0",
+    "string-format": "^0.5.0"
+  },
+  "dependencies": {
+    "ng-meta": "^0.3.10"
+  }
 }

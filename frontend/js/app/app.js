@@ -1,11 +1,11 @@
-var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage']);
+var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngMeta']);
 
 vohApp.config(function ($locationProvider) {
     // $locationProvider.html5Mode(true);
 });
 
 //Application Routing
-vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL) {
+vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL, ngMetaProvider) {
 
     //Default to home page
     $urlRouterProvider.otherwise('/');
@@ -77,6 +77,8 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
     $authProvider.signupUrl = API_URL + 'register';
 
     $httpProvider.interceptors.push('authInterceptor');
+
+    
 
 
 })
