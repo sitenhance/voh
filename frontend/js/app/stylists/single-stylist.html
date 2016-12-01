@@ -28,7 +28,7 @@
                         <!-- End of Specialty Header -->
                         <div class="specialty-skills">
                             <ul>
-                                <li class="specialty-skill" ng-repeat="skill in stylist.specialty">- {{skill}}</li>
+                                <li class="specialty-skill" ng-repeat="skill in stylist.specialties">- {{skill}}</li>
                             </ul>
                         </div>
                     </div>
@@ -42,13 +42,7 @@
                             <h1>Bio</h1>
                         </div>
                         <!-- End Of Stylist Bio Header -->
-                        <div class="stylist-bio-content content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum,
-                                ac facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate.
-                                Quisque sed sem felis. Pellentesque ac bibendum sapien, vitae pulvinar lacus. Aliquam erat
-                                volutpat. Pellentesque magna velit, vehicula ut rhoncus non, porta ut lectus. Nulla facilisi.
-                                Donec consequat, lacus molestie tristique malesuada, nisl nibh sagittis leo, pretium imperdiet
-                                nulla nibh sit amet nisi. Fusce id ultrices elit. </p>
+                        <div class="stylist-bio-content content" ng-bind-html="stylist.bio">
                         </div>
                     </div>
                 </div>
@@ -61,14 +55,9 @@
 <section class="section" id="stylist-gallery-section">
     <div class="container">
         <div class="columns">
-            <div class="column is-12">
-                <div class="fotorama" data-nav='thumbs' data-arrows="true" data-autoplay="true">
-                    <img src="images/gallery-one-lg.jpg" data-caption="Here is the caption one" alt="">
-                    <img src="images/gallery-two-lg.jpg" data-caption="Here is the caption two" alt="">
-                    <img src="images/gallery-three-lg.jpg" data-caption="Here is the caption three" alt="">
-                    <img src="images/gallery-four-lg.jpg" data-caption="Here is the caption four" alt="">
-                    <img src="images/gallery-five-lg.jpg" data-caption="Here is the caption five" alt="">
-                    <img src="images/gallery-six-lg.jpg" data-caption="Here is the caption six" alt="">
+            <div class="column is-10 is-offset-1">
+                <div class="fotorama" data-nav='thumbs' data-arrows="true" data-autoplay="false" data-width="100%" data-maxheight="500">
+                    <img ng-src="{{image.source}}" data-caption="{{image.caption}}" alt="" ng-repeat="image in stylist.images">
                 </div>
             </div>
         </div>
@@ -266,3 +255,4 @@
         </div>
     </div>
 </section>
+<script src="/js/vendor/fotorama.js"></script>
