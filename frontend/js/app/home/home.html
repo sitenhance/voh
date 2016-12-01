@@ -1,4 +1,18 @@
 <!-- Hero Section -->
+<div class="modal" ng-class="{'is-active': showAgreeModal == true}">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="card home-modal">
+            <div class="card-content">
+                <div class="content">
+                    <h5 class="title is-5 home-modal-title"><strong>Thank You For Your Interest</strong></h5>
+                    <p>We will be reviewing you application and be in contact soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close" ng-click="closeModal()"></button>
+</div>
 <section class="hero" id="home-hero">
     <div class="hero-body">
         <div class="container has-text-centered">
