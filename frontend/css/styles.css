@@ -9,16 +9,31 @@ body {
     font-weight: 400;
     background: #fff;
 }
+
+/* Modal */
+.home-modal, .for-stylist-modal {
+    margin: auto;
+    border: #57c6cd solid 6px;
+    padding: 3em 0;
+}
+.home-modal-title {
+    color: #d51546 !important;
+}
+
+.for-stylist-modal-body {
+    text-align: center;
+}  
+
 /*  Fotorama */
 
 .fotorama__caption__wrap {
     padding: 1em;
-    background: #48a4ab;
-    color: #fff;
+    color: #48a4ab;
     text-align: center;
     width: 100%;
     font-size: 1.5em;
 }
+
 /* Button Component Styles */
 
 .action-btn {
@@ -349,8 +364,8 @@ img.input-scl-icon {
 }
 /* For Stylists */
 
-div.for-stylists-frm > label,
-div.for-stylists-frm > p.control > label {
+form.for-stylists-frm > label,
+form.for-stylists-frm > p.control > label {
     font-size: 1.5em;
     margin: 1em 0;
 }
@@ -382,8 +397,14 @@ label.for-stylist-check-radio > input {
     margin-right: .5em;
 }
 
-div.for-stylists-form-container > div#load-more-container {
-    align-self: center;
+input.submit-btn {
+    width: 70%;
+    margin: auto;
+    display: block;
+    margin-top: 2em;
+}
+input.submit-btn[disabled] {
+    background-color: #cc9880;
 }
 /* Stylist Styles */
 
@@ -1321,3 +1342,46 @@ div.thankyou h2 {
 }
 
 /* Profile Page */
+
+/* Loaders CSS */
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(213, 21, 70, 0.2);
+  border-right: 1.1em solid rgba(213, 21, 70, 0.2);
+  border-bottom: 1.1em solid rgba(213, 21, 70, 0.2);
+  border-left: 1.1em solid #d51546;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
