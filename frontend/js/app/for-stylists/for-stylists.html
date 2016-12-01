@@ -1,4 +1,17 @@
 <!-- Featured Stylists Header -->
+<div class="modal" ng-class="{'is-active': showRedirectModal == true}">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="card for-stylist-modal">
+            <div class="card-content">
+                <div class="content">
+                    <div class="loader"></div>
+                    <p class="for-stylist-modal-body">{{modalBody}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section class="section" id="top-header">
     <div class="container">
         <div class="columns">
@@ -12,117 +25,260 @@
 </section>
 
 <!-- Hero Section -->
-    <section class="hero" id="for-stylists-hero">
-        <div class="hero-body">
-        </div>
-    </section>
+<section class="hero" id="for-stylists-hero">
+    <div class="hero-body">
+    </div>
+</section>
 
-    <section class="section" id="for-stylists-join-description">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum, ac
-                        facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate. Quisque
-                        sed sem felis. Pellentesque ac bibendum sapien, vitae pulvinar lacus. Aliquam erat volutpat. Pellentesque
-                        magna velit, vehicula ut rhoncus non, porta ut lectus. Nulla facilisi. Donec consequat, lacus molestie
-                        tristique malesuada, nisl nibh sagittis leo, pretium imperdiet nulla nibh sit amet nisi. Fusce id ultrices
-                        elit. </p><br>
-                    <p>Duis suscipit consequat vulputate. Quisque blandit cursus mi, at auctor urna mollis lacinia. Ut molestie
-                        tempus diam, eu gravida magna efficitur vitae. Vivamus aliquam purus nunc, a ultricies tellus porttitor
-                        sit amet. Aenean placerat rhoncus odio, ac tincidunt libero condimentum id. Donec ut pharetra mi, et
-                        maximus orci. Donec blandit enim at commodo efficitur. Nam in massa at mauris molestie ullamcorper. Cras
-                        a arcu erat. Maecenas suscipit justo id massa lobortis, ac laoreet nisi auctor. Nullam et euismod lectus.
-                        Fusce nunc lorem, ullamcorper nec fermentum eget, semper id ipsum. Mauris hendrerit non metus nec finibus.</p>
-                </div>
+<section class="section" id="for-stylists-join-description">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar nunc ut nibh condimentum, ac
+                    facilisis est pharetra. Aliquam porta neque non mauris venenatis, ut fermentum quam vulputate. Quisque
+                    sed sem felis. Pellentesque ac bibendum sapien, vitae pulvinar lacus. Aliquam erat volutpat. Pellentesque
+                    magna velit, vehicula ut rhoncus non, porta ut lectus. Nulla facilisi. Donec consequat, lacus molestie
+                    tristique malesuada, nisl nibh sagittis leo, pretium imperdiet nulla nibh sit amet nisi. Fusce id ultrices
+                    elit. </p>
+                <br>
+                <p>Duis suscipit consequat vulputate. Quisque blandit cursus mi, at auctor urna mollis lacinia. Ut molestie
+                    tempus diam, eu gravida magna efficitur vitae. Vivamus aliquam purus nunc, a ultricies tellus porttitor
+                    sit amet. Aenean placerat rhoncus odio, ac tincidunt libero condimentum id. Donec ut pharetra mi, et
+                    maximus orci. Donec blandit enim at commodo efficitur. Nam in massa at mauris molestie ullamcorper. Cras
+                    a arcu erat. Maecenas suscipit justo id massa lobortis, ac laoreet nisi auctor. Nullam et euismod lectus.
+                    Fusce nunc lorem, ullamcorper nec fermentum eget, semper id ipsum. Mauris hendrerit non metus nec finibus.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- For Stylists Form -->
-    <section class="section" id="for-stylists-sign-up-section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12">
-                    <div class="for-stylists-form-container">
-                        <div class="for-stylists-frm-intro">
-                            <h1>Sign Up To Be A Featured Stylist</h1>
-                            <h2>The fee to be featured is $200 for a listing, which includes placement on the homepage</h2>
-                        </div>
-                        <div class="for-stylists-frm">
-                            <p class="control"><input type="text" placeholder="First Name" class="input is-large"></p>
-                            <p class="control"><input type="text" placeholder="Last Name" class="input is-large"></p>
-                            <p class="control"><input type="tel" placeholder="Phone Number" class="input is-large"></p>
-                            <p class="control"><input type="email" placeholder="Email" class="input is-large"></p>
-                            <p class="control">
-                                <span class="select is-large">
-                                    <select name="licensed" id="licensed-stylist">
-                                        <option value="">Licensed Stylist?</option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                    </select>
-                                </span>
-                            </p>
-                            <p class="control"><input type="text" placeholder="Salon Name" class="input is-large"></p>
-                            <p class="control"><input type="text" placeholder="Salon Address 1" class="input is-large"></p>
-                            <p class="control"><input type="text" placeholder="Salon Address 2" class="input is-large"></p>
-                            <label for="specialty" class="label">What Do You Specialize In?</label>
-                            <p class="control">
-                                <label class="checkbox for-stylist-check-radio">
-                                    <input type="checkbox" value="proctective">Protective Styles
-                                </label>
-                                <label class="checkbox for-stylist-check-radio">
-                                    <input type="checkbox" value="thermal-straightening">Thermal Straightening
-                                </label>
-                                <label class="checkbox for-stylist-check-radio">
-                                     <input type="checkbox" value="short-hair">Short Hair                                   
-                                </label>
-                                <label class="checkbox for-stylist-check-radio">
-                                    <input type="checkbox" value="hair-coloring">Hair Coloring                             
-                                </label>
-                                <label class="checkbox for-stylist-check-radio">
-                                    <input type="checkbox" value="Kids Hair">Kids Hair
-                                </label>
-                            </p>
-                            <label for="booking-method">Preferred Booking Method:</label>
-                            <p class="control">
-                                <label for="booking-method" class="radio for-stylist-check-radio">
-                                    <input type="radio" name="booking-method">Website
-                                    <input type="radio" name="booking-method">Text
-                                    <input type="radio" name="booking-method">Email
-                                    <input type="radio" name="booking-method">Phone
-                                </label>
-                            </p>
-                            <p class="control">
-                                <div class="social-input">
-                                    <img src="images/facebook-icon.png" alt="" class="input-scl-icon">
-                                    <input type="text" placeholder="Facebook URL" class="input is-large">
-                                </div>
-                                <div class="social-input">
-                                    <img src="images/twitter-icon.png" alt="" class="input-scl-icon">
-                                    <input type="text" placeholder="Twitter URL" class="input is-large">
-                                </div>
-                                <div class="social-input">
-                                    <img src="images/insta-icon.png" alt="" class="input-scl-icon">
-                                    <input type="text" placeholder="Instagram URL" class="input is-large">
-                                </div>
-                                <div class="social-input">
-                                    <img src="images/pinterest-icon.png" alt="" class="input-scl-icon">
-                                    <input type="text" placeholder="Pinterest URL" class="input is-large">
-                                </div>                                
-                            </p>
-                            <p class="control">
-                                <textarea name="bio" id="stylist-bio" class="textarea is-large" cols="30" rows="10"></textarea>
-                            </p>
-                            <label class="label">Upload Two Images to show your best work!</label>
-                            <p class="control">
-                                <button class="button action-btn is-medium">Upload Photo</button>
-                            </p>
-                        </div>
-                        <div id="load-more-container">
-                            <a href="#" class="button load-btn is-large">Submit</a>
-                        </div>
+<!-- For Stylists Form -->
+<section class="section" id="for-stylists-sign-up-section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="for-stylists-form-container">
+                    <div class="for-stylists-frm-intro">
+                        <h1>Sign Up To Be A Featured Stylist</h1>
+                        <h2>The fee to be featured is $200 for a listing, which includes placement on the homepage</h2>
                     </div>
+                    <!-- end of for stylist frm intro -->
+                    <form class="for-stylists-frm" enctype="multipart/form-data" ng-submit="submit()" novalidate name="stylistForm">
+                        <!--<div class="notification is-danger" ng-show="stylistForm.role.$invalid && !stylistForm.role.$pristine">
+                            Please enter your role
+                        </div>
+                        <p class="control">
+                            <label for="role" class="label">What Is Your Service? (required)</label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="role" value="hair-stylist" ng-model="formData.role.hair_stylist" required>Hair Stylist
+                            </label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="role" value="make_up_artist" ng-model="formData.role.make_up_artist">Make Up Artist
+                            </label>
+                        </p>-->
+                        <div class="notification is-danger" ng-show="stylistForm.first_name.$invalid && !stylistForm.first_name.$pristine">
+                            Please enter your first name
+                        </div>
+                        <p class="control">
+                            <input type="text" name="first_name" placeholder="First Name (required)" class="input is-large" ng-model="formData.generalInfo.first_name"
+                                required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.last_name.$invalid && !stylistForm.last_name.$pristine">
+                            Please enter your last name
+                        </div>
+                        <p class="control">
+                            <input type="text" name="last_name" placeholder="Last Name (required)" class="input is-large" ng-model="formData.generalInfo.last_name"
+                                required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.phone_number.$invalid && !stylistForm.phone_number.$pristine">
+                            Please enter your phone number
+                        </div>
+                        <p class="control">
+                            <input type="tel" name="phone_number" pattern='^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$' placeholder="Phone Number (required)"
+                                class="input is-large" ng-model="formData.generalInfo.phone_number" required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.email.$invalid && !stylistForm.email.$pristine">
+                            Please enter your email address
+                        </div>
+                        <p class="control">
+                            <input type="email" name="email" placeholder="Email (required)" class="input is-large" ng-model="formData.generalInfo.email"
+                                required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.licensed.$invalid && !stylistForm.licensed.$pristine">
+                            Please choose whether you are licensed or not
+                        </div>
+                        <p class="control">
+                            <span class="select is-large">
+                                <select name="licensed" id="licensed-stylist" ng-model="formData.generalInfo.licensed" required>
+                                    <option value="">Licensed Stylist? (required)</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </span>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.salon_name.$invalid && !stylistForm.salon_name.$pristine">
+                            Please enter your business's name
+                        </div>
+                        <p class="control">
+                            <input type="text" name="salon_name" placeholder="Business Name (required)" class="input is-large" ng-model="formData.salonInfo.salon_name"
+                                required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.salon_address1.$invalid && !stylistForm.salon_address1.$pristine">
+                            Please enter your business's address
+                        </div>
+                        <p class="control">
+                            <input type="text" name="salon_address1" placeholder="Business Address (required)" class="input is-large" ng-model="formData.salonInfo.salon_address1"
+                                required>
+                        </p>
+                        <p class="control">
+                            <input type="text" placeholder="Suite #" class="input is-large" ng-model="formData.salonInfo.salon_address2">
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.city.$invalid && !stylistForm.city.$pristine">
+                            Please enter your city
+                        </div>
+                        <p class="control">
+                            <input type="text" name="city" placeholder="City (required)" class="input is-large" ng-model="formData.salonInfo.city" required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.state.$invalid && !stylistForm.state.$pristine">
+                            Please enter your state
+                        </div>
+                        <div class="control">
+                            <span class="select is-large">
+                                <select name="state" size="1" id="licensed-stylist" ng-model="formData.salonInfo.state" required>
+                                    <option selected value="">State... (required)</option>
+                                    <option value="ZZ">None</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                           </span>
+                        </div>
+                        <div class="notification is-danger" ng-show="stylistForm.zipcode.$invalid && !stylistForm.zipcode.$pristine">
+                            Please enter your Zip Code
+                        </div>
+                        <p class="control">
+                            <input type="text" name="zipcode" placeholder="Zip Code (required)" class="input is-large" ng-model="formData.salonInfo.zipcode"
+                                required>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.specialty.$invalid && !stylistForm.specialty.$pristine">
+                            Please enter your specialty
+                        </div>
+                        <p class="control">
+                            <label for="specialty" class="label">What Do You Specialize In? (required)</label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="specialty" value="proctective" ng-model="formData.specialize.protective_styles">Protective Styles
+                            </label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="specialty" value="thermal-straightening" ng-model="formData.specialize.thermal_straightening">Thermal Straightening
+                            </label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="specialty" value="short-hair" ng-model="formData.specialize.short_hair">Short Hair
+                            </label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="specialty" value="hair-coloring" ng-model="formData.specialize.hair_coloring">Hair Coloring
+                            </label>
+                            <label class="checkbox for-stylist-check-radio">
+                                <input type="checkbox" name="specialty" value="Kids Hair" ng-model="formData.specialize.kids_hair">Kids Hair
+                            </label>
+                        </p>
+                        <div class="notification is-danger" ng-show="stylistForm.booking-method.$invalid && !stylistForm.boking-method.$pristine">
+                            Please enter your booking method
+                        </div>
+                        <label for="booking-method">Preferred Booking Method: (required)</label>
+                        <p class="control">
+                            <label for="booking-method" class="radio for-stylist-check-radio">
+                                <input type="radio" name="booking-method" ng-model="formData.bookingMethod"  value="website" required>Website
+                                <input type="radio" name="booking-method" ng-model="formData.bookingMethod" value="text">Text
+                                <input type="radio" name="booking-method" ng-model="formData.bookingMethod" value="email">Email
+                                <input type="radio" name="booking-method" ng-model="formData.bookingMethod" value="phone">Phone
+                            </label>
+                        </p>
+                        <div class="control">
+                            <div class="social-input">
+                                <img src="images/facebook-icon.png" alt="" class="input-scl-icon">
+                                <input type="text" class="input is-large" ng-model="formData.socialMedia.facebook">
+                            </div>
+                            <div class="social-input">
+                                <img src="images/twitter-icon.png" alt="" class="input-scl-icon">
+                                <input type="text" placeholder="Twitter URL" class="input is-large" ng-model="formData.socialMedia.twitter">
+                            </div>
+                            <div class="social-input">
+                                <img src="images/insta-icon.png" alt="" class="input-scl-icon">
+                                <input type="text" placeholder="Instagram URL" class="input is-large" ng-model="formData.socialMedia.instagram">
+                            </div>
+                            <div class="social-input">
+                                <img src="images/pinterest-icon.png" alt="" class="input-scl-icon">
+                                <input type="text" placeholder="Pinterest URL" class="input is-large" ng-model="formData.socialMedia.pinterest">
+                            </div>
+                        </div>
+                        <div class="notification is-danger" ng-show="stylistForm.bio.$invalid && !stylistForm.bio.$pristine">
+                            Please enter your bio
+                        </div>
+                        <p class="control">
+                            <textarea name="bio" id="stylist-bio" class="textarea is-large" cols="30" rows="10" placeholder="Please enter your profesional bio here (required)"
+                                ng-model="formData.generalInfo.bio" required></textarea>
+                        </p>
+                        <p class="control">
+                            <label class="label">Upload Two Images to show your best work!</label>
+                            <input type="file" ngf-select ngf-accept="'image/*'" ngf-multiple="true" name="photos" ng-model="formData.photos[0]">
+                            <input type="file" ngf-select ngf-accept="'image/*'" ngf-multiple="true" name="photos" ng-model="formData.photos[1]">
+                        </p>
+                        <p class="control">
+                            <input type="submit" ng-disabled="stylistForm.$invalid" class="button load-btn is-large submit-btn" value="Submit">
+                        </p>
+                    </form>
                 </div>
+                <!--  end of for-stylist-form-container -->
             </div>
+            <!-- End Of is-12 -->
         </div>
-    </section>
+        <!-- end of columns -->
+    </div>
+</section>
