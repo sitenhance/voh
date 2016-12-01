@@ -1,11 +1,11 @@
-var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngMeta']);
+var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngFileUpload', 'ngSanitize']);
 
 vohApp.config(function ($locationProvider) {
     // $locationProvider.html5Mode(true);
 });
 
 //Application Routing
-vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL, ngMetaProvider) {
+vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL) {
 
     //Default to home page
     $urlRouterProvider.otherwise('/');
@@ -13,7 +13,8 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: '/js/app/home/home.html'
+            templateUrl: '/js/app/home/home.html',
+            controller: 'homeCtrl'
         })
         .state('find-stylists', {
             url: '/find-stylists',
