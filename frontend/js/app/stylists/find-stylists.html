@@ -6,28 +6,22 @@
                 <div id="fnd-stl-search-input-container">
                     <p class="control">
                         <span class="select is-large">
-                                <select ng-model="data.location" name="fnd-styl-location" id="fnd-styl-location">
-                                    <option value="">Enter Location</option>
-                                    <option value="Houston, TX">Houston, TX</option>
-                                    <option value="Atlanta, GA">Atlanta, GA</option>
-                                    <option value="Los Angeles, CA">Los Angeles, CA</option>
-                                    <option value="St. Louis, MO">St. Louis, MO</option>
-                                </select>
-                            </span>
+                            <select ng-model="location" name="fnd-styl-location" id="fnd-styl-location">
+                                <option selected value="">Enter Location</option>
+                                <option ng-repeat="location in data.locations" value="{{location}}">{{location}}</option>
+                            </select>
+                        </span>
                     </p>
                     <p class="control">
                         <span class="select is-large">
-                                <select ng-model="data.hairstyle" name="fnd-styl-location" id="fnd-styl-location">
-                                    <option value="">Hairstyle</option>
-                                    <option value="bobcuts">bobcuts</option>
-                                    <option value="braids">braids</option>
-                                    <option value="bun">bun</option>
-                                    <option value="bunches">bunches</option>
+                                <select ng-model="specialty" name="fnd-styl-location" id="fnd-styl-location">
+                                    <option value="" selected>Choose Specialty</option>
+                                    <option ng-repeat="specialty in data.specialties" value="{{specialty}}">{{specialty}}</option>
                                 </select>
                             </span>
                     </p>
                     <p class="control">
-                        <button ng-click="searchForStylists(data.location, data.hairstyle)" class="button action-btn is-medium">Search</button>
+                        <button ng-click="searchForStylists(location, specialty)" class="button action-btn is-medium">Search</button>
                     </p>
                 </div>
             </div>
@@ -41,6 +35,9 @@
     <div class="container">
         <div class="columns">
             <div class="column is-12" id="fs-container">
+                <div class="no-results-section" ng-show="noResults">
+                    <p>No Results Found</p>
+                </div>
                 <div class="card-grid">
                     <div class="card voh-card-3" ng-repeat="stylist in stylists">
                         <div class="card-image voh-card-image">
