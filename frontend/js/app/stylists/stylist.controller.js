@@ -1,5 +1,5 @@
 (function () {
-    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', 'usersService', function ($scope, $stateParams, $anchorScroll, $location, usersService) {
+    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', 'usersService', '$sce', function ($scope, $stateParams, $anchorScroll, $location, usersService, $sce) {
 
         //Function to check if $stateParams is empty
         function isEmpty(obj) {
@@ -11,9 +11,15 @@
             return true && JSON.stringify(obj) === JSON.stringify({});
         }
 
+        //Data Object for Find Stylists Drop Down Menu Selections
+        $scope.data = {
+            specialties: [],
+            locations: []
+        };
+
         //Find Stylists That Are Featured
         function findFeaturedStylists() {
-            var featuredStylists = _.filter(stylists, {
+            var featuredStylists = _.filter(stylistsList, {
                 'featured': true
             });
             return featuredStylists;
@@ -22,7 +28,7 @@
         $scope.stylists = findFeaturedStylists();
 
         $scope.startedSearch = function(hairstyle) {
-            $scope.stylists = findSpecialties(stylists, hairstyle);
+            $scope.stylists = findSpecialties(stylistsList, hairstyle);
         };
 
         $scope.goToStylistHeader = function () {
@@ -30,12 +36,60 @@
             $anchorScroll();
         };
 
+        //Function that feeds Locations to the Find Stylist Dropdown Component
+        function loadLocations() {
+
+            var stylistLocation;
+
+            _.filter(stylistsList, function(item) {
+                var stylistCity = item.city;
+                var stylistState = item.state;
+                //Create Location string i.e Houston, TX
+                stylistLocation = stylistCity + ', ' + stylistState;
+
+                if($scope.data.locations.length === 0) {
+                    $scope.data.locations.push(stylistLocation);
+                } else {
+                    var isInArray = _.indexOf($scope.data.locations, stylistLocation);
+                    if(isInArray === -1) {
+                        $scope.data.locations.push(stylistLocation);
+                    }
+                }
+            });
+        }
+
+        //Fire function for Find Stylist Location Dropdown
+        loadLocations();
+
+
+        //Function that feeds Specialties to the Find Stylist Dropdown Component
+        function loadSpecialties() {
+
+            var stylistSpecialties;
+
+            _.filter(stylistsList, function(item) {
+                
+                _.filter(item.specialties, function(specialty) {
+                    if ($scope.data.specialties.length === 0) {
+                        $scope.data.specialties.push(specialty);
+                    } else {
+                        var isInArray = _.indexOf($scope.data.specialties, specialty);
+                        if (isInArray === -1) {
+                            $scope.data.specialties.push(specialty);
+                        } 
+                    }
+                });
+            });
+        }
+
+        //Fire function for Find Stylist specialties dropdown component
+        loadSpecialties();
+
         //Find Stylists that do certain haircuts
         function findSpecialties(stylistsArg, pickedStyle) {
             var specialStylists = _.chain(stylistsArg)
                 .filter(function (item) {
-
-                    var singleStylist = _.chain(item.specialty).filter(function (hairstyle) {
+                    var singleStylist = _.chain(item.specialties).filter(function (hairstyle) {
                         if (hairstyle === pickedStyle) {
                             return true;
                         } else {
@@ -44,7 +98,10 @@
                     }).value();
 
                     if (singleStylist.length !== 0) {
+                        $scope.noResults = false;
                         return item;
+                    } else {
+                        $scope.noResults = true;
                     }
 
                 })
@@ -53,26 +110,27 @@
             return specialStylists;
         }
 
-
-        //Data Object for Find Stylists Drop Down Menu Selections
-        $scope.data = {
-            hairstyle: null,
-            location: null
-        };
+        $scope.specialty = '';
+        $scope.location = '';
 
         // Function for when the user chooses options in the Hero Dropdown in Find Stylists page
         $scope.searchForStylists = function (location, hairstyle) {
-            if (hairstyle === null) {
+            if(location === '' && hairstyle === '') {
+                $scope.stylists = findFeaturedStylists();
+            } else if (hairstyle === '') {
                 var locationArray = location.split(', ');
                 var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);
                 $scope.stylists = stylistsInLocation;
-            } else if (location === null) {
-                var stylistsSpecialty = findSpecialties(stylists, hairstyle);
+            } else if (location === '') {
+                var stylistsSpecialty = findSpecialties(stylistsList, hairstyle);
                 $scope.stylists = stylistsSpecialty;
             } else {
                 var locationArray = location.split(', ');
                 var stylistsInLocation = findLocation(locationArray[0], locationArray[1]);
+                console.log('stylistInLocation, '. stylistsInLocation);
                 $scope.stylists = findSpecialties(stylistsInLocation, hairstyle);
+
+
             }
             return $scope.stylists;
         };
@@ -80,10 +138,11 @@
 
         //Find stylists by city and state
         function findLocation(city, state) {
-            var stylistsInLocation = _.chain(stylists)
+            var stylistsInLocation = _.chain(stylistsList)
                 .filter(function (item) {
                     if (item.city === city) {
                         if (item.state === state) {
+                            console.log(item);
                             return item;
                         }
                     }
@@ -106,10 +165,10 @@
 
         //================ Single Stylist Logic ==================//
         if(!isEmpty($stateParams)) {
-            console.log($stateParams);
-            _.chain(stylists).filter(function(item) {
+            _.chain(stylistsList).filter(function(item) {
                 if(item.id === Number($stateParams.id)) {
                     $scope.stylist = item;
+                    $scope.stylistBio = $sce.trustAsHtml($scope.stylist.bio);
                 }
             }).value();
 
@@ -118,9 +177,6 @@
             $scope.$on('userAuthentication', function() {
                 $scope.registered = usersService.loggedIn;
             });
-
-            
-
         }
 
     }]);
