@@ -46,5 +46,6 @@
         $scope.openLightboxModal = function (index) {
             Lightbox.openModal($scope.images, index);
         };
+        
     }]);
 }());

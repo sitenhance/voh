@@ -5,7 +5,7 @@ vohApp.config(function ($locationProvider) {
 });
 
 //Application Routing
-vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, API_URL) {
+vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, LightboxProvider, API_URL) {
 
     //Default to home page
     $urlRouterProvider.otherwise('/');
@@ -88,6 +88,8 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
     $authProvider.signupUrl = API_URL + 'register';
 
     $httpProvider.interceptors.push('authInterceptor');
+    
+    LightboxProvider.templateUrl = '/js/app/gallery/lightbox.html';
 
     
 
