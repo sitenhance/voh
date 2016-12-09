@@ -1,0 +1,42 @@
+/*background and border*/
+
+.wpcf7 {
+background-color: #F0F0F0;
+border: 5px solid #666666;
+}
+
+/*spacing*/
+
+.wpcf7-form {
+ 
+margin-left: 25px;
+ 
+margin-right: 25px;
+ 
+margin-top: 25px;
+}
+
+/*extend messaging area*/
+
+.wpcf7-textarea {
+ 
+width: 50%;
+ 
+}
+
+/*extending the other fields to match the messaging*/
+
+.wpcf7 input {
+ 
+width: 50%;
+ 
+}
+
+/*button color*/
+.wpcf7-submit {
+ 
+background: #555555;
+ 
+color: #ffffff;
+ 
+}
