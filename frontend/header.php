@@ -10,12 +10,9 @@
     <!--<base href="/sitenhance/">-->
     <meta name="author" content="VoiceOfHair">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="fb:app_id" content="325018401163245" />
+    <meta property="fb:app_id" content="330044287394465" />
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="http://content.jwplatform.com/libraries/u5Apx40q.js"></script>
     <?php wp_head(); ?>
     <!--[if lt IE 9]>
 	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,13 +20,13 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 </head>
 
-<body <?php body_class(); ?> ng-controller="stateCtrl">
+<body <?php body_class(); ?>>
     <!-- Facebook SDK -->
     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
-                appId: '325018401163245',
+                appId: '330044287394465',
                 xfbml: true,
                 version: 'v2.8'
             });
@@ -74,7 +71,7 @@
     <nav class="nav" sticky-nav>
         <div class="nav-left">
             <a href="index.html" class="nav-item">
-                <img src="images/logo.png" alt="" class="logo-img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="" class="logo-img2">
             </a>
             <a ui-sref="about" class="nav-item">ABOUT</a>
             <a ui-sref="find-stylists" class="nav-item">FIND STYLISTS</a>
@@ -89,5 +86,3 @@
         </div>
         <!-- end of nav-left -->
     </nav>
-
-    <div ui-view></div>
