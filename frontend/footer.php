@@ -5,7 +5,7 @@
             <div class="column is-6" id="left-footer-section">
                 <div id="footer-logo">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="VOH Logo">
+                        <img src="/images/logo.png" alt="VOH Logo">
                     </a>
                 </div>
                 <div id="footer-slogan">
@@ -26,11 +26,11 @@
         <div class="columns">
             <div class="column is-12" id="footer-social-section">
                 <div id="footer-social-icons">
-                    <a href="#" class="social-icon"><img src="images/insta-icon.png" alt=""></a>
-                    <a href="#" class="social-icon"><img src="images/pinterest-icon.png" alt=""></a>
-                    <a href="#" class="social-icon"><img src="images/facebook-icon.png" alt=""></a>
-                    <a href="#" class="social-icon"><img src="images/twitter-icon.png" alt=""></a>
-                    <a href="#" class="social-icon"><img src="images/g-plus-icon.png" alt=""></a>
+                    <a href="https://www.instagram.com/voiceofhair/" class="social-icon"><img src="/images/insta-icon.png" alt=""></a>
+                    <a href="https://www.pinterest.com/VoiceOfHair/" class="social-icon"><img src="/images/pinterest-icon.png" alt=""></a>
+                    <a href="https://www.facebook.com/VoiceOfHair" class="social-icon"><img src="/images/facebook-icon.png" alt=""></a>
+                    <a href="https://twitter.com/VoiceOfHair" class="social-icon"><img src="/images/twitter-icon.png" alt=""></a>
+                    <a href="https://plus.google.com/115401833217576240515" class="social-icon"><img src="/images/g-plus-icon.png" alt=""></a>
                 </div>
             </div>
         </div>
