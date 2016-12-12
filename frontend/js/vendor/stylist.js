@@ -1,638 +1,146 @@
 var stylists = [
     {
-        id: 1,
-        name: 'Brandy Green',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids', 'bun', 'bunches'],
-        images: [
+        'id': 1,
+        'name': 'Brenda Gee',
+        'city': 'Atlanta',
+        'state': 'GA',
+        'specialties': ['bobcuts', 'buns', 'braids'],
+        'bio': '<p>Creative and spirited are two words to describe hair stylist Brenda Gee. Well known for her innovation hair designs, and educational /motivational classes this New York native will never let you second guess her talents as a hair stylist or as a business woman.<br> Excelling in the hair care industry for over 30 years, Brenda’s Talents are based on a solid foundation of education and product knowledge. Brenda Graduated from Robert Fiance 1979 she went on to style trends and Black Hair is in Brooklyn N.Y. and taught at Wilfred Academy. After moving to Miami Brenda became the Premiere stylist at Glemby Salon in 1985. Her entrerperunal spirit surfaced in 1989 when she opened Turning Heads in North Miami, In 1991 she began traveling the United States, Canada and the Caribbean as an educational Artist for Dudley Products, in 2001 she went on to work for Oster Products and is presently on Mazza Style Team. In 2000 Brenda opened Brenda Gee Salon in Hollywood Fl, and began styling the tresses of Mariah Careys Rainbow tour and Venus and Serena williams, she also work on music videos such as trick Daddy, Little Romeo, Jagged Edge/ Nelly and many more. in 2005 Brenda relocated to Atlanta Ga and Opened Brenda Gee Salon in Alpharetta. &quot; I love healthy hair that moves and feels like silk weather short or long, thin or course its all beautiful! My job is transforming a clients hair right before their eyes now thats gratification!&quot;</p>',
+        'images': [
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/brenda_gee/brenda_1.jpg',
+                'caption': 'My caption one'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/brenda_gee/brenda_2.jpg',
+                'caption': 'My caption two'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/brenda_gee/brenda_3.jpg',
+                'caption': 'My caption three'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/brenda_gee/brenda_4.jpg',
+                'caption': 'My caption four'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/brenda_gee/brenda_5.jpg',
+                'caption': 'My caption five'
+            },
+            {
+                'source': './data/brenda_gee/brenda_6.jpg',
+                'caption': 'My caption six'
             }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Our Salon',
-        street: '600 Travis St',
-        city: 'Houston',
-        state: 'TX',
-        zip: '77002',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: true,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
+        ]
     },
     {
-        id: 2,
-        name: 'Stacy Nash',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['braids', 'bun'],
-        images: [
+        'id': 2,
+        'name': 'Tierra Holly Barnes',
+        'city': 'Atlanta',
+        'state': 'GA',
+        'specialties': ['buns', 'braids'],
+        'bio': '<p>I\'ve been interested in hair since my Barbie days, cutting and styling my dollies. I was the girl in school that used to play in everyone\'s hair. And as a teenager braided hair to earn some cash. When I was 16 my cousin got me a job as an assistant at her cousins salon. That was my job all through high school and college.<br> I attended the university of Illinois at Chicago from 2005-2009, majoring in business administration. It was my senior year in college when Paul Mitchell the school Chicago was built directly across the street from my campus. I decided to take a tour and I fell in love with how professional the salon was. I had always wanted a career and until then I didn\'t see that being a cosmetologist could be a career. <br>I was so excited about it I enrolled in Paul Mitchell while still finishing my degree at UIC.  After I graduated from UIC I decided to move to Atlanta where I transferred from Paul Mitchell to Roberts school of cosmetology. I graduated and got my license in 2011 and have been doing hair professionally since then. <br>I have worked with, been mentored by, and taken classes from some of the best in the industry such as Anthony Cutz, Khimandi, Cynthia Lumzy and HairbyChantellen to name a few. I aspire and take pride in being a well versed stylist who can transition my clients from many different hair trends.</p>',
+        'images': [
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/tierra_holly_barnes/thb_1.png',
+                'caption': 'My caption one'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/tierra_holly_barnes/thb_2.png',
+                'caption': 'My caption two'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/tierra_holly_barnes/thb_3.png',
+                'caption': 'My caption three'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/tierra_holly_barnes/thb_4.png',
+                'caption': 'My caption four'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/tierra_holly_barnes/thb_5.png',
+                'caption': 'My caption five'
+            },
+            {
+                'source': './data/tierra_holly_barnes/thb_6.png',
+                'caption': 'My caption six'
             }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'My Salon',
-        street: '222 Malone St',
-        city: 'Houston',
-        state: 'TX',
-        zip: '77007',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
+        ]
     },
     {
-        id: 3,
-        name: 'Brittany Cash',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'bun', 'bunches'],
-        images: [
+        'id': 3,
+        'name': 'Kenya Kirk',
+        'city': 'Austin',
+        'state': 'TX',
+        'specialties': ['buns', 'braids', 'undercuts'],
+        'bio': 'As a personal stylist, those fortunate enough to be on her book (which reads like a who\'s who of the fashion industry), she allows her talents to go further than just the style, instead she extends her knowledge to her clients, giving them essential "hot tips" to maintain and flaunt their custom styles.<br> Living her passion and dream, Kenya wanted to share her joy even further, in the fall of 2013 she started Dreamz for Diamondz. A non-profit organization making wigs and partial wigs for young children undergoing chemotherapy.  With a vow that "no child should have to pay for being beautiful as they are", Kenya works tirelessly campaigning for donations for this cause with tremendous success. <br>Kenya\'s strong desire, empowering attitude and innovative mindset, keeps her fresh and inspirational for everyone she comes in contact with.  If Kenya isn\'t at her salon making someone fabulous, you can find her in a classroom or at a seminar in any country at anytime, at a fashion show, photoshoot, or a charitable event. Giving back and staying active is important for Kenya and holds a safe place in her heart. Education is key in her success  and journey; learning how to be better, new techniques and perfecting her craft, so she can become better at what she does....',
+        'images': [
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/kenya_kirk/kk_1.png',
+                'caption': 'My caption one'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/kenya_kirk/kk_2.png',
+                'caption': 'My caption two'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/kenya_kirk/kk_3.png',
+                'caption': 'My caption three'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/kenya_kirk/kk_4.png',
+                'caption': 'My caption four'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/kenya_kirk/kk_5.png',
+                'caption': 'My caption five'
+            },
+            {
+                'source': './data/kenya_kirk/kk_6.png',
+                'caption': 'My caption six'
             }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Malon Sty',
-        street: '1406 Kirby Dr',
-        city: 'Houston',
-        state: 'TX',
-        zip: '77019',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
+        ]
     },
     {
-        id: 4,
-        name: 'Ashley Moore',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids', 'bunches'],
-        images: [
+        'id': 4,
+        'name': 'Chaundra',
+        'city': 'Dallas',
+        'state': 'TX',
+        'specialties': ['buns', 'braids', 'undercuts'],
+        'bio': '<p>Cosmetologist and Makeup artist for 10 years + I absolutely love what I do. New to the Dallas area and I want to be a blessing to both you and your hair. I specialize in extensions and healthy hair. My ultimate goal is the health of your hair! OF COURSE!<br>Book Me! I will do my best to make sure you don\'t leave unsatisfied!<br>If you have any questions don\'t hesitate to contact me!<br>God Bless!</p>',
+        'images': [
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/chaundra/chaundra_1.png',
+                'caption': 'My caption one'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/chaundra/chaundra_2.png',
+                'caption': 'My caption two'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/chaundra/chaundra_3.png',
+                'caption': 'My caption three'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/chaundra/chaundra_4.png',
+                'caption': 'My caption four'
             },
             {
-                'url': 'http://placehold.it/900x350'
+                'source': './data/chaundra/chaundra_5.png',
+                'caption': 'My caption five'
+            },
+            {
+                'source': './data/chaundra/chaundra_6.png',
+                'caption': 'My caption six'
+            },
+            {
+                'source': './data/chaundra/chaundra_7.png',
+                'caption': 'My caption seven'
+            },
+            {
+                'source': './data/chaundra/chaundra_8.png',
+                'caption': 'My caption eight'
             }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 3',
-        street: '6400 High Star Dr',
-        city: 'Houston',
-        state: 'TX',
-        zip: '77074',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 5,
-        name: 'Ashley Gray',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids', 'bun'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 4',
-        street: '450 Auburn Ave NE',
-        city: 'Atlanta',
-        state: 'GA',
-        zip: '30312',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: true,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 6,
-        name: 'Gina Bash',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['braids', 'bunches'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 5',
-        street: '248 Oakland Ave SE',
-        city: 'Atlanta',
-        state: 'GA',
-        zip: '30312',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 7,
-        name: 'Tina Mash',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids', 'bunches'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 5',
-        street: '200 N Spring St',
-        city: 'Los Angeles',
-        state: 'CA',
-        zip: '90012',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: true,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 8,
-        name: 'Brianna Davis',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 15',
-        street: ' 555 W Temple St',
-        city: 'Los Angeles',
-        state: 'CA',
-        zip: '90012',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 9,
-        name: 'Melanie Jones',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids', 'bun'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 12',
-        street: ' 800 N Alameda St',
-        city: 'Los Angeles',
-        state: 'CA',
-        zip: '90012',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 11,
-        name: 'Melissa Bones',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'braids', 'bun', 'bunches'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 16',
-        street: '6350 Delmar Blvd',
-        city: 'St. Louis',
-        state: 'MO',
-        zip: '63130',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 12,
-        name: 'Melissa Grayson',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['bobcuts', 'bun', 'bunches'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 18',
-        street: 'Plaza Frontenac, 1701 S Lindbergh Blvd #210',
-        city: 'St. Louis',
-        state: 'MO',
-        zip: '63131',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: false,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
-    },
-    {
-        id: 13,
-        name: 'Stacy McGrady',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque nisi at quam elementum mattis. Etiam quis auctor libero, in luctus enim. In fermentum diam fringilla metus placerat finibus. Cras molestie lobortis mollis. Suspendisse lacus ex, aliquet eget ultrices quis, suscipit at justo. Duis quis velit in dui vehicula faucibus sit amet non odio. Nulla tempor sapien neque, nec rutrum sapien semper eget. Quisque at magna et nisi vehicula vehicula et et nunc. Aliquam commodo quis sapien rutrum euismod. Aliquam sagittis, felis at imperdiet consectetur, purus ex facilisis turpis, at imperdiet risus odio at lorem. Nullam elementum auctor ipsum. Proin porta nisl lectus, at mollis justo sagittis sit amet. Nulla interdum at nisi sit amet venenatis.',
-        specialty: ['braids', 'bun', 'bunches'],
-        images: [
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            },
-            {
-                'url': 'http://placehold.it/900x350'
-            }
-        ],
-        phone: '832-888-8888',
-        email: 'myemail@gmail.com',
-        website: 'www.mywebsite.com',
-        salonName: 'Salon 21',
-        street: '911 Washington Ave #170',
-        city: 'St. Louis',
-        state: 'MO',
-        zip: '63101',
-        socialNetwork: [
-            {
-                name: 'Facebook',
-                url: 'www.facebook.com'
-            },
-            {
-                name: 'Twitter',
-                url: 'www.twitter.com'
-            },
-            {
-                name: 'Pinterest',
-                url: 'www.pinterest.com'
-            },
-            {
-                name: 'Instagram',
-                url: 'www.instagram.com'
-            }
-        ],
-        featured: true,
-        stylistImage: {
-            url: 'http://placehold.it/300x350'
-        }
+        ]
     }
 ];

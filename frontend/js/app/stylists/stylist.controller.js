@@ -1,5 +1,5 @@
 (function () {
-    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', 'usersService', '$sce', function ($scope, $stateParams, $anchorScroll, $location, usersService, $sce) {
+    vohApp.controller('stylistCtrl', ['$scope', '$stateParams', '$anchorScroll', '$location', 'usersService', '$sce', 'featuredStylistsService', function ($scope, $stateParams, $anchorScroll, $location, usersService, $sce, featuredStylistsService) {
 
         //Function to check if $stateParams is empty
         function isEmpty(obj) {
@@ -9,6 +9,24 @@
             }
 
             return true && JSON.stringify(obj) === JSON.stringify({});
+        }
+
+        if(isEmpty($stateParams)) {
+
+            $scope.stylists = [];
+
+            featuredStylistsService.getFeaturedStylists.query(function(res) {
+                var posts = res;
+
+                $scope.featuredStylists = _.filter(posts, function(post){
+                    _.filter(post.categories, function(category){
+                        if(category === 2) {
+                            $scope.stylists.push(post);
+                        }
+                    });
+                });
+            });
+
         }
 
         //Data Object for Find Stylists Drop Down Menu Selections
@@ -24,8 +42,6 @@
             });
             return featuredStylists;
         }
-
-        $scope.stylists = findFeaturedStylists();
 
         $scope.startedSearch = function(hairstyle) {
             $scope.stylists = findSpecialties(stylistsList, hairstyle);

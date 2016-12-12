@@ -58,22 +58,6 @@
 
     <div ui-view></div>
 
-    <!-- Start WebsiteAlive AliveTracker v3.0 Code -->
-    <script type="text/javascript">
-    function wsa_include_js(){
-    var wsa_host = (("https:" == document.location.protocol) ? "https://" : "http://");
-    var js = document.createElement("script");
-    js.setAttribute("language", "javascript");
-    js.setAttribute("type", "text/javascript");
-    js.setAttribute("src",wsa_host + "tracking-v3-dev0.websitealive.com/3.0/?objectref=dev0&groupid=7&websiteid=11");
-    document.getElementsByTagName("head").item(0).appendChild(js);
-    }
-    if (window.attachEvent) {window.attachEvent("onload", wsa_include_js);}
-    else if (window.addEventListener) {window.addEventListener("load", wsa_include_js, false);}
-    else {document.addEventListener("load", wsa_include_js, false);}
-    </script>
-    <!-- End WebsiteAlive AliveTracker v3.0 Code -->
-
     <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
@@ -142,6 +126,7 @@
 <script src="/js/vendor/loaders.css.js"></script>
 <script src="/js/vendor/ng-file-upload-all.min.js"></script>
 <script src="/js/vendor/angular-sanitize.min.js"></script>
+<script src="/js/vendor/angular-resource.min.js"></script>
 <!-- Vendor JavaScript Libraries -->
 <script src="./js/vendor/ng-sticky.js"></script>
 
@@ -168,6 +153,7 @@
 <script src="./js/app/services/authtoken.js"></script>
 <script src="./js/app/services/authinterceptor.js"></script>
 <script src="./js/app/services/auth.js"></script>
+<script src="./js/app/services/wp-services/featured-stylists.services.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngFileUpload', 'ngSanitize']);
+var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngFileUpload', 'ngSanitize', 'ngResource']);
 
 vohApp.config(function ($locationProvider) {
     // $locationProvider.html5Mode(true);
@@ -13,68 +13,68 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: '/js/app/home/home.html',
+            templateUrl: appInfo.template_url + '/js/app/home/home.html',
             controller: 'homeCtrl'
         })
         .state('find-stylists', {
             url: '/find-stylists',
-            templateUrl: './js/app/stylists/find-stylists.html',
+            templateUrl: appInfo.template_url + '/js/app/stylists/find-stylists.html',
             controller: 'stylistCtrl'
         })
         .state('stylist', {
             url: '/stylist/:id',
-            templateUrl: './js/app/stylists/single-stylist.html',
+            templateUrl: appInfo.template_url + '/js/app/stylists/single-stylist.html',
             controller: 'stylistCtrl'
         })
         .state('blog', {
             url: '/blog',
-            templateUrl: './js/app/blog/blog.html',
+            templateUrl: appInfo.template_url + '/js/app/blog/blog.html',
             controller: 'blogCtrl'
         })
         .state('register', {
             url: '/register',
-            templateUrl: './js/app/register/register.html',
+            templateUrl: appInfo.template_url + '/js/app/register/register.html',
             controller: 'registerCtrl'
         })
         .state('profile', {
             url: '/profile',
-            templateUrl: './js/app/profile/profile.html',
+            templateUrl: appInfo.template_url + '/js/app/profile/profile.html',
             controller: 'profileCtrl',
             data: { requiredLogin: true }
         })
         .state('thanks', {
             url: '/thanks',
-            templateUrl: './js/app/thanks/thanks.html',
+            templateUrl: appInfo.template_url + '/js/app/thanks/thanks.html',
             controller: 'thanksCtrl'
         })
         .state('login', {
             url: '/login',
-            templateUrl: './js/app/login/login.html',
+            templateUrl: appInfo.template_url + '/js/app/login/login.html',
             controller: 'loginCtrl'
         })
         .state('gallery', {
             url: '/gallery',
-            templateUrl: './js/app/gallery/gallery.html',
+            templateUrl: appInfo.template_url + '/js/app/gallery/gallery.html',
             controller: 'galleryCtrl'
         })
         .state('about', {
             url: '/about',
-            templateUrl: './js/app/about/about.html',
+            templateUrl: appInfo.template_url + '/js/app/about/about.html',
             controller: 'aboutCtrl'
         })
         .state('courses', {
             url: '/courses',
-            templateUrl: './js/app/courses/courses.html',
+            templateUrl: appInfo.template_url + '/js/app/courses/courses.html',
             controller: 'coursesCtrl'
         })
         .state('for-stylists', {
             url: '/for-stylists',
-            templateUrl: './js/app/for-stylists/for-stylists.html',
+            templateUrl: appInfo.template_url + '/js/app/for-stylists/for-stylists.html',
             controller: 'forStylistsCtrl'
         })
         .state('contact', {
             url: '/contact',
-            templateUrl: './js/app/contact/contact.html',
+            templateUrl: appInfo.template_url + '/js/app/contact/contact.html',
             controller: 'contactCtrl'
         });
 

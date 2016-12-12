@@ -104,8 +104,8 @@ module.exports = {
         var transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
-                user: 'username email',
-                pass: 'email pw'
+                user: 'sitenhancetest@gmail.com',
+                pass: 'Sitenhance1'
             }
         });
 
@@ -128,7 +128,33 @@ module.exports = {
 
         });
     },
-    sendUserEmail: function(userInfo) {
-        console.log(userInfo);
+    sendUserEmail: function(userInfo, host) {
+        console.log('send email to user');
+        var link = 'http://' + host + '/verify?id=' + userInfo.rand;
+
+        console.log(userInfo.email);
+
+        var mailOptions = {
+            to: userInfo.email,
+            subject: 'Voice Of Hair Email Confirmation',
+            html: '<p>Hello,<br> Please click on the link to verify your email.<br><a href=' + link + '>Click here to verify</a>'
+        };
+
+        var transporter = nodemailer.createTransport({
+            service: 'Gmail',
+            auth: {
+                user: 'sitenhancetest@gmail.com',
+                pass: 'Sitenhance1'
+            }
+        });
+
+        transporter.sendMail(mailOptions, function(error, info) {
+            if(error) {
+                console.log(error);
+            } else {
+                console.log('Message sent: ' + info.response);
+            }
+        });
+
     }
 };

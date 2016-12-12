@@ -105,9 +105,9 @@
                         </div>
                         <div class="card-content">
                             <div class="content voh-card-content">
-                                <h1>{{stylist.name}}</h1>
-                                <p>{{stylist.city}}, {{stylist.state}}</p>
-                                <a href="single-stylist.html" class="button read-more-btn">Read More</a>
+                                <h1>{{stylist.acf.stylist_name}}</h1>
+                                <p>{{stylist.acf.stylist_city}}, {{stylist.acf.stylist_state}}</p>
+                                <a href="single-stylist.html" ui-sref="stylist({id: stylist.id})" class="button read-more-btn">Read More</a>
                             </div>
                         </div>
                     </div>
