@@ -23,7 +23,7 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
         })
         .state('stylist', {
             url: '/stylist/:id',
-            templateUrl: appInfo.template_url + '/js/app/stylists/single-stylist.html',
+            templateUrl: appInfo.template_url + '/js/app/stylists/single-stylist.php',
             controller: 'stylistCtrl'
         })
         .state('blog', {
@@ -110,4 +110,7 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
             }
 
         });
-    });
+    })
+    .config(['$qProvider', function ($qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+}]);
