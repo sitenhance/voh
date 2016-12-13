@@ -70,7 +70,7 @@
     <!-- Navigation Section -->
     <nav class="nav" sticky-nav>
         <div class="nav-left">
-            <a href="index.php" class="nav-item">
+            <a ui-sref="home" class="nav-item">
                 <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="" class="logo-img2">
             </a>
             <a ui-sref="about" class="nav-item">ABOUT</a>
