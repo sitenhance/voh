@@ -4,7 +4,7 @@
 
         featuredStylistsService.getFeaturedStylists = $resource(appInfo.api_url + 'posts?per_page=100');
 
-        featuredStylistsService.getFeaturedStylist = $resource(appInfo.api_url + 'posts/?id=:ID', {
+        featuredStylistsService.getFeaturedStylist = $resource(appInfo.api_url + 'posts/:ID', {
             ID: '@id'
         });
 
