@@ -181,6 +181,21 @@
 
         //================ Single Stylist Logic ==================//
         if(!isEmpty($stateParams)) {
+
+            console.log($stateParams.id);
+
+            featuredStylistsService.getFeaturedStylist.get( {ID: $stateParams.id}, function(res) {
+                var specialties = res.acf.stylist_specialties;
+                $scope.skills = _.split(specialties, ',');
+                $scope.bio = res.acf.stylist_bio;
+                $scope.city = res.acf.stylist_city;
+                $scope.state = res.acf.stylist_state;
+                $scope.stylistName = res.acf.stylist_name;
+                $scope.stylistImages = res.acf.stylist_gallery;
+                console.log($scope.stylistImages);
+                console.log(appInfo.template_url);
+            });
+
             _.chain(stylistsList).filter(function(item) {
                 if(item.id === Number($stateParams.id)) {
                     $scope.stylist = item;
