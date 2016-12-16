@@ -52,7 +52,6 @@
         </div>
     </div>
 </section>
-
 <!-- Image Gallery -->
 <section class="section" id="stylist-gallery-section">
     <div class="container">
@@ -257,5 +256,4 @@
         </div>
     </div>
 </section>
-<!-- Script part -->
-<script src="/js/vendor/fotorama.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>

@@ -22,6 +22,7 @@
             wp_enqueue_script('satellizerJS', get_template_directory_uri() . '/js/vendor/satellizer.min.js', array('angular-core'), null, false);
             wp_enqueue_script('ngStorage', get_template_directory_uri() . '/js/vendor/ngStorage.min.js', array('angular-core'), null, false);
             wp_enqueue_script('loadersJS', get_template_directory_uri() . '/js/vendor/loaders.css.js', array('angular-core'), null, false);
+            wp_enqueue_script('ocLazyLoad', get_template_directory_uri() . '/js/vendor/ocLazyLoad.min.js', array('angular-core'), null, false);
             wp_enqueue_script('stylistListJS', get_template_directory_uri() . '/data/stylists-data.js', array('angular-core'), null, false);
             wp_enqueue_script('ngScripts', get_template_directory_uri() . '/js/app/app.js', array(), false);
             wp_localize_script('ngScripts', 'appInfo', array(

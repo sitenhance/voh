@@ -182,6 +182,8 @@
         //================ Single Stylist Logic ==================//
         if(!isEmpty($stateParams)) {
 
+            $scope.templateUrl = appInfo.template_url + 'js/vendor/fotorama.js';
+
             console.log($stateParams.id);
 
             featuredStylistsService.getFeaturedStylist.get( {ID: $stateParams.id}, function(res) {
@@ -193,7 +195,6 @@
                 $scope.stylistName = res.acf.stylist_name;
                 $scope.stylistImages = res.acf.stylist_gallery;
                 console.log($scope.stylistImages);
-                console.log(appInfo.template_url);
             });
 
             _.chain(stylistsList).filter(function(item) {

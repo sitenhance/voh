@@ -1,4 +1,4 @@
-var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngFileUpload', 'ngSanitize', 'ngResource']);
+var vohApp = angular.module('vohApp', ['ui.router', 'dm.stickyNav', 'satellizer', 'bootstrapLightbox', 'ngStorage', 'ngFileUpload', 'ngSanitize', 'ngResource', 'oc.lazyLoad']);
 
 vohApp.config(function ($locationProvider) {
     // $locationProvider.html5Mode(true);
@@ -24,7 +24,16 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
         .state('stylist', {
             url: '/stylist/:id',
             templateUrl: appInfo.template_url + '/js/app/stylists/single-stylist.php',
-            controller: 'stylistCtrl'
+            controller: 'stylistCtrl',
+            resolve: {
+                deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load([{
+                        files: [
+                            appInfo.template_url+'/js/vendor/fotorama.js'
+                        ]
+                    }]);
+                }]
+            }
         })
         .state('blog', {
             url: '/blog',

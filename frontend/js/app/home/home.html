@@ -100,12 +100,12 @@
                     <div class="card voh-card-3" ng-repeat="stylist in stylists">
                         <div class="card-image voh-card-image">
                             <figure class="image is-3by2">
-                                <img src="images/fs-one.jpg" alt="">
+                                <img ng-src="{{stylist.acf.stylist_image.url}}" alt="">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="content voh-card-content">
-                                <h1>{{stylist.acf.stylist_name}}</h1>
+                                <h1>{{stylist.title.rendered}}</h1>
                                 <p>{{stylist.acf.stylist_city}}, {{stylist.acf.stylist_state}}</p>
                                 <a ui-sref="stylist({id: stylist.id})" class="button read-more-btn">Read More</a>
                             </div>

@@ -44,10 +44,10 @@ router.createplan = function(req, res) {
         ],
         "merchant_preferences": {
             "auto_bill_amount": "YES",
-            "cancel_url": "http://localhost:9000/cancel",
+            "cancel_url": "http://52.204.102.10:9000/cancel",
             "initial_fail_amount_action": "CONTINUE",
             "max_fail_attempts": "1",
-            "return_url": "http://localhost:9000/processagreement",
+            "return_url": "http://52.204.102.10:9000/processagreement",
             "setup_fee": {
                 "currency": "USD",
                 "value": "0"
@@ -146,7 +146,7 @@ router.processagreement = function(req, res) {
             console.log(error);
             throw error;
         } else {
-            res.redirect('http://localhost:8080/#/?level=agreed');
+            res.redirect('http://52.204.102.10/voh/wordpress/#!/?level=agreed');
         }
         
     });
@@ -155,7 +155,7 @@ router.processagreement = function(req, res) {
 
 router.cancelagreement = function(req, res) {
     
-    res.redirect('http://localhost:8080/#/level=cancelled');
+    res.redirect('http://52.204.102.10/voh/wordpress/#!/level=cancelled');
     
 };
 
