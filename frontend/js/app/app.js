@@ -104,7 +104,7 @@ vohApp.config(function ($stateProvider, $urlRouterProvider, $authProvider, $http
 
 
 })
-    .constant('API_URL', 'http://localhost:9000/')
+    .constant('API_URL', 'http://52.204.102.10:9000/')
     .run(function ($rootScope, $auth, $state) {
         $rootScope.$on('$stateChangeStart', function (event, toState) {
             var requiredLogin = false;
