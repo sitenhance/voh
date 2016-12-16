@@ -18,7 +18,7 @@
             $scope.showRedirectModal = true;
             $scope.modalBody = 'Redirecting to you to PayPal';
             Upload.upload({
-                url: 'http://localhost:9000/pp/upload',
+                url: 'http://52.204.102.10:9000/pp/upload',
                 arrayKey: '',
                 data: {photos: $scope.formData.photos}
             }).then(function(resp) {
@@ -26,7 +26,7 @@
                 $scope.formData.photos = resp.data;
                 $http({
                     method: 'POST',
-                    url: 'http://localhost:9000/createagreement',
+                    url: 'http://52.204.102.10:9000/createagreement',
                     data: $scope.formData
                 }).then(function(res) {
                     if(res.data !== null && res.data !== undefined) {
